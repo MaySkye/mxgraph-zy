@@ -1,0 +1,338 @@
+#app,#mini-app {
+    /* ww-dialog */
+    --ww-dialog-width: 450px;
+    --ww-dialog-height: 300px;
+    --ww-dialog-bgColor: white;
+    --border-scale: 5px;
+
+    /* ww-mini-dialog */
+    --mini-dialog-width-scale:0.7;
+    --mini-dialog-height-scale:0.7;
+
+    /* ww-dialog-title */
+    --ww-dialog-title-height: 30px;
+    --ww-dialog-title-fontSize: 15px;
+    --ww-dialog-title-bgColor: #F2F2F2;
+
+    /* ww-mini-dialog-title 默认颜色 */
+    --ww-mini-dialog-title-bgColor: #F2F2F2;
+    --ww-dialog-warning: #f2dede;
+    --ww-dialog-success: #8FC88F;
+    --ww-dialog-info:#E0E0A0;
+    --ww-dialog-default:#F2F2F2;
+
+    /* ww-dialog-table */
+    --ww-dialog-table-colHeight: 40px;
+    --ww-dialog-table-colWidth: 20px;
+
+    /* 默认不显示 */
+    display: none;
+
+    /* test */
+    background-color: #E0E0A0;
+}
+
+.ww-dialog-mask {
+    display: block;
+    position: absolute;
+    z-index: 100; /*蒙层 z-index*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.ww-dialog {
+    display: block;
+    border-radius: var(--border-scale);
+    width: var(--ww-dialog-width);
+    height: var(--ww-dialog-height);
+    position: absolute;
+    z-index: 110; /*模态框 z-index*/
+    background-color: var(--ww-dialog-bgColor);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px gray;
+}
+
+.ww-mini-dialog {
+    display: block;
+    border-radius: var(--border-scale);
+    width: calc(var(--ww-dialog-width) * var(--mini-dialog-width-scale));
+    height: calc(var(--ww-dialog-height) * var(--mini-dialog-height-scale));
+    position: absolute;
+    z-index: 110; /*模态框 z-index*/
+    background-color: var(--ww-dialog-bgColor);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 5px gray;
+}
+
+.ww-dialog-title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: var(--border-scale) var(--border-scale) 0 0;
+    height: var(--ww-dialog-title-height);
+    line-height: var(--ww-dialog-title-height);
+    font-size: var(--ww-dialog-title-fontSize);
+    background-color: var(--ww-dialog-title-bgColor);
+}
+
+.ww-mini-dialog-title {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border-radius: var(--border-scale) var(--border-scale) 0 0;
+    height: var(--ww-dialog-title-height);
+    line-height: var(--ww-dialog-title-height);
+    font-size: var(--ww-dialog-title-fontSize);
+    background-color: var(--ww-mini-dialog-title-bgColor);
+}
+
+/* 对话框类型颜色 */
+.ww-dialog-warning{
+    background-color: var(--ww-dialog-warning);
+}
+
+.ww-dialog-info{
+    background-color: var(--ww-dialog-info);
+}
+
+.ww-dialog-success{
+    background-color: var(--ww-dialog-success);
+}
+
+.ww-dialog-default{
+    background-color: var(--ww-dialog-default);
+}
+
+.ww-dialog-body {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Table 边框 */
+.ww-dialog-table {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 20%);
+}
+
+/* 表元 */
+.ww-dialog-table, .ww-dialog-table td, .ww-dialog-table th {
+    font-weight: normal;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/* Table 表格元尺寸 */
+.ww-dialog-table td, .ww-dialog-table th {
+    height: var(--ww-dialog-table-colHeight);
+}
+
+/* Table Input尺寸定义 */
+.ww-dialog-table input {
+    border: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.ww-col-1 {
+    width: calc(var(--ww-dialog-table-colWidth) * 1);
+}
+
+.ww-col-2 {
+    width: calc(var(--ww-dialog-table-colWidth) * 2);
+}
+
+.ww-col-3 {
+    width: calc(var(--ww-dialog-table-colWidth) * 3);
+}
+
+.ww-col-4 {
+    width: calc(var(--ww-dialog-table-colWidth) * 4);
+}
+
+.ww-col-5 {
+    width: calc(var(--ww-dialog-table-colWidth) * 5);
+}
+
+.ww-col-6 {
+    width: calc(var(--ww-dialog-table-colWidth) * 6);
+}
+
+.ww-col-7 {
+    width: calc(var(--ww-dialog-table-colWidth) * 7);
+}
+
+
+.ww-dialog-btnGroup {
+    display: block;
+    width: 100%;
+    height: 42px;
+    position: absolute;
+    bottom: 0;
+    /*background: #2A3D61;*/
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ww-dialog-btnGroup > button {
+    float: right;
+    position: relative;
+    margin-left: 10px;
+}
+
+
+/* ******** ******** ******** ********  NEC样式 改写  通用自定义按钮-默认蓝色 ******** ******** ******** ********* */
+.ww-btn {
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0 12px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #2d88bf;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    word-wrap: normal;
+    white-space: nowrap;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#6dbde4), to(#399dd8));
+    background: -webkit-linear-gradient(#6dbde4, #399dd8);
+    background: -moz-linear-gradient(#6dbde4, #399dd8);
+    background: -ms-linear-gradient(#6dbde4, #399dd8);
+    background: linear-gradient(#6dbde4, #399dd8);
+}
+
+.ww-btn, .ww-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ww-btn:hover, .ww-btn:focus {
+    background: #399dd8;
+}
+
+.ww-btn:active {
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ww-btn::-moz-focus-inner {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.ww-btn .btnsel {
+    display: inline-block;
+    vertical-align: middle;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    border-color: rgba(255, 255, 255, 0.8) transparent transparent;
+}
+
+.ww-btn:hover .btnsel, .ww-btn:focus .btnsel {
+    border-top-color: rgba(255, 255, 255, 1);
+}
+
+/* 较大 */
+.ww-btn-lg {
+    padding: 0 15px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.ww-btn-lg .btnsel {
+    border-width: 5px 5px 0;
+}
+
+/* 较小 */
+.ww-btn-sm {
+    padding: 0 10px;
+    height: 22px;
+    line-height: 22px;
+}
+
+/* 红色 */
+.ww-btn-red {
+    border-color: #9f161b;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ee232a), to(#cc1c23));
+    background: -webkit-linear-gradient(#ee232a, #cc1c23);
+    background: -moz-linear-gradient(#ee232a, #cc1c23);
+    background: -ms-linear-gradient(#ee232a, #cc1c23);
+    background: linear-gradient(#ee232a, #cc1c23);
+}
+
+.ww-btn-red:hover, .ww-btn-red:focus {
+    background: #cc1c23;
+}
+
+/* 黄色 */
+.ww-btn-yellow {
+    border-color: #e1962d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fbb149), to(#f8960a));
+    background: -webkit-linear-gradient(#fbb149, #f8960a);
+    background: -moz-linear-gradient(#fbb149, #f8960a);
+    background: -ms-linear-gradient(#fbb149, #f8960a);
+    background: linear-gradient(#fbb149, #f8960a);
+}
+
+.ww-btn-yellow:hover, .ww-btn-yellow:focus {
+    background: #f8960a;
+}
+
+/* 绿色 */
+.ww-btn-green {
+    border-color: #52a552;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#68c668), to(#50b150));
+    background: -webkit-linear-gradient(#68c668, #50b150);
+    background: -moz-linear-gradient(#68c668, #50b150);
+    background: -ms-linear-gradient(#68c668, #50b150);
+    background: linear-gradient(#68c668, #50b150);
+}
+
+.ww-btn-green:hover, .ww-btn-green:focus {
+    background: #50b150;
+}
+
+/* 灰色 */
+.ww-btn-gray {
+    border-color: #d0d0d0;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fefefe), to(#e7e7e7));
+    background: -webkit-linear-gradient(#fefefe, #e7e7e7);
+    background: -moz-linear-gradient(#fefefe, #e7e7e7);
+    background: -ms-linear-gradient(#fefefe, #e7e7e7);
+    background: linear-gradient(#fefefe, #e7e7e7);
+}
+
+.ww-btn-gray, .ww-btn-gray:hover {
+    color: #333;
+}
+
+.ww-btn-gray:hover, .ww-btn-gray:focus {
+    background: #e7e7e7;
+}
+
+.ww-btn-gray .btnsel {
+    border-top-color: rgba(0, 0, 0, 0.6);
+}
+
+.ww-btn-gray:hover .btnsel, .ww-btn-gray:focus .btnsel {
+    border-top-color: rgba(0, 0, 0, 1);
+}
