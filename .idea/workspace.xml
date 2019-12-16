@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da898b9-d9a6-4be0-9f90-56fae25ada86" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/config/site_info.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/Marker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html" afterDir="false" />
+    <list default="true" id="4da898b9-d9a6-4be0-9f90-56fae25ada86" name="Default" comment="sitemap.html的有关操作">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/EditorMenuBar$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/EditorMenuBar$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/SchemaEditorMenuBar$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/SchemaEditorMenuBar$4.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,20 +67,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="331">
               <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -259,7 +230,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576468536214" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576479635178" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../fiber-monitor-system-server" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -409,15 +380,23 @@
       <workItem from="1575896509669" duration="1805000" />
       <workItem from="1575947730511" duration="11243000" />
       <workItem from="1575985192524" duration="31192000" />
-      <workItem from="1576461064571" duration="6350000" />
+      <workItem from="1576461064571" duration="7714000" />
     </task>
+    <task id="LOCAL-00001" summary="sitemap.html的有关操作">
+      <created>1576468626497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576468626497</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114082000" />
+    <option name="totallyTimeSpent" value="115446000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.21827" />
       <window_info id="Structure" order="1" sideWeight="0.17118998" side_tool="true" weight="0.22473727" />
@@ -427,8 +406,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.25925925" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69199675" visible="true" weight="0.15769945" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.43970317" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69199675" weight="0.15769945" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.16512059" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,6 +466,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sitemap.html的有关操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="sitemap.html的有关操作" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
