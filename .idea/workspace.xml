@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da898b9-d9a6-4be0-9f90-56fae25ada86" name="Default" comment="" />
+    <list default="true" id="4da898b9-d9a6-4be0-9f90-56fae25ada86" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/config/site_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/Marker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/images/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/EditorMenuBar$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/EditorMenuBar$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/SchemaEditorMenuBar$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mxgraph-master/com/mxgraph/examples/swing/editor/SchemaEditorMenuBar$4.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,71 +34,68 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Actions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="1" />
-              <folding>
-                <element signature="n#!!block;n#InitSiteName#0" />
-                <element signature="n#!!block;n#getCellById#0" />
-                <element signature="n#!!block;n#collectDeviceId#0" />
-                <element signature="n#!!block;n#collectMonitorInfo#0" />
-                <element signature="n#!!block;n#sendCloseCmd#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+            <state relative-caret-position="75">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="22" />
               <folding>
+                <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#createXMLHttpRequest#0" />
                 <element signature="n#!!block;n#getTime#0" />
+                <element signature="n#!!block;n#requestSiteLineInfo#0" />
+                <element signature="n#!!block;n#createLevel#0" />
+                <element signature="n#!!block;n#addMarker#0" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#openInfo#0" />
+                <element signature="n#!!block;n#createLine#0" />
+                <element signature="n#!!block;n#addLine#0" />
+                <element signature="n#!!block;n#normal_fun#0" />
+                <element signature="n#!!block;n#add_site#0" />
+                <element signature="n#!!block;n#draw_line#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/open.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2625">
-              <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js">
+        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="1366">
+              <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!block;n#createXMLHttpRequest#0" />
+                <element signature="n#!!block;n#getTime#0" />
+                <element signature="n#!!block;n#addMarker#0" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#!!block;n#openInfo#0" />
+                <element signature="n#!!block;n#paint#0" />
+                <element signature="n#!!block;n#normal_fun#0" />
+                <element signature="n#!!block;n#add_site#0" />
+                <element signature="n#!!block;n#draw_line#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/OpenGraph.js">
+        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="331">
+              <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -118,7 +132,15 @@
       <find>mGraph</find>
       <find>remove</find>
       <find>monitorInfoSet</find>
+      <find>device</find>
+      <find>device1</find>
+      <find>overlaycomplete</find>
+      <find>data</find>
+      <find>createLevel</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -128,16 +150,21 @@
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/js/OpenGraph.js" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Actions.js" />
-        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" />
-        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/index.html" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" />
       </list>
     </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.5.3" />
+        <option name="mavenHome" value="D:/apache-maven-3.5.3" />
         <option name="userSettingsFile" value="D:\LearnedProject\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -152,9 +179,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-384" />
-    <option name="y" value="69" />
-    <option name="width" value="1140" />
+    <option name="x" value="466" />
+    <option name="y" value="51" />
+    <option name="width" value="1482" />
     <option name="height" value="975" />
   </component>
   <component name="ProjectId" id="1S334PdPmlaTqZ5exy1E2tjET1U" />
@@ -163,7 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -205,6 +231,15 @@
               <item name="examples" type="462c0819:PsiDirectoryNode" />
               <item name="grapheditor" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mxgraph-master" type="462c0819:PsiDirectoryNode" />
+              <item name="javascript" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="grapheditor" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="sitemap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -217,14 +252,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1574842033983" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576468536214" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fiber-monitor-system-server" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -234,18 +270,18 @@
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\images" />
+      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\config" />
+      <recent name="D:\LearnedProject\wangwei\mxgraph-master\mxgraph-master\javascript\examples\grapheditor\www\images" />
+      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
+      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww" />
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\home" />
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
       <recent name="D:\LearnedProject\mxgraph-master\mxgraph-master\java\examples\com\mxgraph\examples\swing\images" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\LearnedProject\wangwei\mxgraph-master\mxgraph-master\javascript\examples\grapheditor\www\images" />
-      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
-      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww" />
-      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www" />
-      <recent name="D:\LearnedProject\mxgraph-master\mxgraph-master\javascript\examples\grapheditor\www\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -371,17 +407,20 @@
       <workItem from="1575857989539" duration="2616000" />
       <workItem from="1575881264840" duration="488000" />
       <workItem from="1575896509669" duration="1805000" />
+      <workItem from="1575947730511" duration="11243000" />
+      <workItem from="1575985192524" duration="31192000" />
+      <workItem from="1576461064571" duration="6350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65297000" />
+    <option name="totallyTimeSpent" value="114082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6528384" visible="true" weight="0.23039612" />
-      <window_info id="Structure" order="1" sideWeight="0.34716156" side_tool="true" visible="true" weight="0.23039612" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.21827" />
+      <window_info id="Structure" order="1" sideWeight="0.17118998" side_tool="true" weight="0.22473727" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -389,15 +428,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.25925925" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.5925926" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.69199675" visible="true" weight="0.15769945" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.16512059" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5004042" side_tool="true" visible="true" weight="0.15185185" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32962963" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.30800325" side_tool="true" weight="0.111317255" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4995958" weight="0.3283859" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
@@ -412,6 +451,39 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.22473727" />
+      <window_info id="Structure" order="1" sideWeight="0.17118998" side_tool="true" visible="true" weight="0.22473727" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25925925" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69199675" visible="true" weight="0.111317255" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.30800325" side_tool="true" visible="true" weight="0.111317255" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4995958" weight="0.3283859" />
+      <window_info anchor="bottom" id="Problems" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Statistic" order="14" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -478,49 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Sidebar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="e#0#7#0" expanded="true" />
-            <element signature="e#16#23#0" expanded="true" />
-            <element signature="e#0#7#0" expanded="true" />
-            <element signature="e#17#24#0" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="e#59#63#0" expanded="true" />
-            <element signature="e#63#67#0" expanded="true" />
-            <element signature="e#76#80#0" expanded="true" />
-            <element signature="e#80#84#0" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/action_ww.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -569,59 +598,212 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/java/src/com/mxgraph/examples/web/GraphEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/images/add.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/js-api/index/General9.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="15" column="57518" selection-start-line="15" selection-start-column="57518" selection-end-line="15" selection-end-column="57518" />
+          <folding>
+            <element signature="e#173897#173902#0" expanded="true" />
+            <element signature="e#173902#173907#0" expanded="true" />
+            <element signature="e#174441#174445#0" expanded="true" />
+            <element signature="e#174927#174931#0" expanded="true" />
+            <element signature="e#175416#175420#0" expanded="true" />
+            <element signature="e#176428#176432#0" expanded="true" />
+            <element signature="e#177694#177698#0" expanded="true" />
+            <element signature="e#178289#178293#0" expanded="true" />
+            <element signature="e#178795#178799#0" expanded="true" />
+            <element signature="e#179279#179283#0" expanded="true" />
+            <element signature="e#180158#180162#0" expanded="true" />
+            <element signature="e#180684#180688#0" expanded="true" />
+            <element signature="e#181171#181175#0" expanded="true" />
+            <element signature="e#182304#182308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Shapes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3675" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/images/device/device1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Sidebar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2675">
+          <caret line="107" column="10" selection-start-line="107" selection-start-column="10" selection-end-line="107" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#4;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="e#0#7#0" expanded="true" />
+            <element signature="e#16#23#0" expanded="true" />
+            <element signature="e#0#7#0" expanded="true" />
+            <element signature="e#17#24#0" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="e#59#63#0" expanded="true" />
+            <element signature="e#63#67#0" expanded="true" />
+            <element signature="e#76#80#0" expanded="true" />
+            <element signature="e#80#84#0" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" selection-start-line="15" selection-end-line="18" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="341" column="27" selection-start-line="341" selection-start-column="16" selection-end-line="341" selection-end-column="27" />
           <folding>
             <element signature="n#!!block;n#InitSiteName#0" />
             <element signature="n#!!block;n#getCellById#0" />
             <element signature="n#!!block;n#collectDeviceId#0" />
             <element signature="n#!!block;n#collectMonitorInfo#0" />
             <element signature="n#!!block;n#sendCloseCmd#0" />
+            <element signature="n#style#0;n#mxCell#0;n#MyObject#0;n#root#0;n#mxGraphModel#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-          <folding>
-            <element signature="n#!!block;n#createXMLHttpRequest#0" />
-            <element signature="n#!!block;n#getTime#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/open.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2625">
-          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        <state relative-caret-position="166">
+          <caret line="113" column="35" lean-forward="true" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#center#0;n#!!top" expanded="true" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/open.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3900" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/OpenGraph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="850">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js">
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/config/site_info.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="400">
+          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="84" column="7" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="84" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#label#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addsite.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/addlink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#createXMLHttpRequest#0" />
+            <element signature="n#!!block;n#getTime#0" />
+            <element signature="n#!!block;n#requestSiteLineInfo#0" />
+            <element signature="n#!!block;n#createLevel#0" />
+            <element signature="n#!!block;n#addMarker#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#openInfo#0" />
+            <element signature="n#!!block;n#createLine#0" />
+            <element signature="n#!!block;n#addLine#0" />
+            <element signature="n#!!block;n#normal_fun#0" />
+            <element signature="n#!!block;n#add_site#0" />
+            <element signature="n#!!block;n#draw_line#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1366">
+          <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#createXMLHttpRequest#0" />
+            <element signature="n#!!block;n#getTime#0" />
+            <element signature="n#!!block;n#addMarker#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#!!block;n#openInfo#0" />
+            <element signature="n#!!block;n#paint#0" />
+            <element signature="n#!!block;n#normal_fun#0" />
+            <element signature="n#!!block;n#add_site#0" />
+            <element signature="n#!!block;n#draw_line#0" />
+          </folding>
         </state>
       </provider>
     </entry>
