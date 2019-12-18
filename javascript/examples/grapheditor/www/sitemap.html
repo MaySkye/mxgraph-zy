@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>站点预览</title>
-    <!-- baidu map -->
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <!--<style type="text/css">
-        body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
-    </style>-->
+    <script src="js_ww/frame/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zxNTayBLftAdnCLFKG8QRupU3RNFwvj2"></script>
     <script src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js" type="text/javascript"></script>
-   <!-- <script type="text/javascript" src="sitemap/sitelink.js"></script>-->
-    <script type="text/javascript" src="sitemap/paintMap.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
 </head>
 <body>
  <style>
@@ -35,7 +32,7 @@
          border: #668B8B;
          border-style: solid;
      }
-     #addSite{
+     #addsite{
          width: 60px;
          height: 52px;
          background-color: #2B91AF;
@@ -47,7 +44,7 @@
          border: #668B8B;
          border-style: solid;
      }
-     #addLink {
+     #addline {
          width: 60px;
          height: 52px;
          background-color: #2B91AF;
@@ -59,62 +56,604 @@
          border: #668B8B;
          border-style: solid;
      }
+     /*背景层*/
+     #popLayer {
+         display: none;
+         background-color: #B3B3B3;
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         z-index: 10;
+         -moz-opacity: 0.8;
+         opacity:.80;
+         filter: alpha(opacity=80);/* 只支持IE6、7、8、9 */
+     }
  </style>
+
+ <div id="popLayer"></div>
+
+ <div class="modal" id="popSiteBox" tabindex="-1">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" onclick="btn_closeSiteBox()"><span aria-hidden="true">&times;</span><span
+                         class="sr-only">Close</span></button>
+                 <h4 class="modal-title">站点信息</h4>
+             </div>
+             <div class="modal-body">
+                 <form class="bs-example bs-example-form" role="form">
+                     <div class="input-group">
+                         <span class="input-group-addon">站点名称</span>
+                         <input type="text" class="form-control" id="sitename" placeholder="比如：北京">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">站点级别</span>
+                         <select class="form-control" id="sitelevel">
+                             <option>1</option>
+                             <option>2</option>
+                             <option>3</option>
+                         </select>
+                         <span class="input-group-addon">站点类别</span>
+                         <select class="form-control" id="sitetype">
+                             <option>正式</option>
+                             <option>普通</option>
+                             <option>测试</option>
+                         </select>
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">站点位置</span>
+                         <span class="input-group-addon">经度:</span>
+                         <input type="text" class="form-control" id="lng">
+                         <span class="input-group-addon">纬度：</span>
+                         <input type="text" class="form-control" id="lat">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">站点编码</span>
+                         <input type="text" class="form-control" id="siteaddress" placeholder="0000 0000 0000 0000">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">站点说明</span>
+                         <input type="text" class="form-control" id="siteinfo">
+                     </div>
+                     <br>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="btn_closeSiteBox()">取消</button>
+                 <button type="button" class="btn btn-primary" onclick="addsiteInfo()">添加</button>
+             </div>
+         </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->
+
+ <div class="modal" id="popLineBox" tabindex="-1">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" onclick="btn_closeLineBox()"><span aria-hidden="true">&times;</span><span
+                         class="sr-only">Close</span></button>
+                 <h4 class="modal-title">链路信息</h4>
+             </div>
+             <div class="modal-body">
+                 <form class="bs-example bs-example-form" role="form">
+                     <div class="input-group">
+                         <span class="input-group-addon">连接站点1</span>
+                         <input type="text" class="form-control" id="point1" placeholder="比如：北京">
+                         <span class="input-group-addon">连接站点2</span>
+                         <input type="text" class="form-control" id="point2" placeholder="比如：北京">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">链路级别</span>
+                         <select class="form-control" id="linetype">
+                             <option>重点</option>
+                             <option>普通</option>
+                         </select>
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">链路名称</span>
+                         <input type="text" class="form-control" id="linename">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">链路信息</span>
+                         <input type="text" class="form-control" id="lineinfo">
+                     </div>
+                     <br>
+                     <div class="input-group">
+                         <span class="input-group-addon">链路长度</span>
+                         <input type="text" class="form-control" id="linelen">
+                     </div>
+                     <br>
+                 </form>
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="btn_closeLineBox()">取消</button>
+                 <button type="button" class="btn btn-primary" onclick="addlineInfo()">添加</button>
+             </div>
+         </div><!-- /.modal-content -->
+     </div><!-- /.modal-dialog -->
+ </div><!-- /.modal -->
+
  <div id="tools">
-     <input type="button"  id="normal" checked="true"  onclick="normal()"/>
-     <input type="button"  id="addSite" onclick = "addsite();" />
-     <input type="button"  id="addLink" onclick="addlink()"/>
+     <input type="button"  id="normal"  onclick="btn_normal()"/>
+     <input type="button"  id="addsite" onclick = "btn_addsite()" />
+     <input type="button"  id="addline" onclick="btn_addline()"/>
  </div>
 
- <div id = "allmap">
-</div>
+ <div id = "allmap"></div>
 
 <script type="text/javascript">
-    //百度地图API功能
-    var map = new BMap.Map("allmap");
-    map.centerAndZoom(new BMap.Point(108.94704,37.347507),5);//根据坐标初始化地图
-    map.enableScrollWheelZoom(true);
-    map.enableAutoResize();
-    map.addControl(new BMap.NavigationControl());   //平移缩放控件
-    map.addControl(new BMap.ScaleControl());        //比例尺
-    map.addControl(new BMap.OverviewMapControl());  //缩略地图
-   // map.addControl(new BMap.MapTypeControl());    //地图类型
-    /*requestSiteInfo(map);
-    requestSiteLineInfo(map);
-    let res=false;
-    while (!res){
-        res=paint(map);
-    }*/
-    requestPaintInfo(map);
+    //添加站点信息的各个对象
+    let popSiteBox = document.getElementById("popSiteBox");
+    let popLayer = document.getElementById("popLayer");
+    let input_sitename = document.getElementById("sitename")//获取输入框元素
+    let input_sitelevel = document.getElementById("sitelevel")
+    let input_sitetype = document.getElementById("sitetype")
+    let input_lng = document.getElementById("lng")
+    let input_lat = document.getElementById("lat")
+    let input_siteaddress = document.getElementById("siteaddress")
+    let input_siteinfo = document.getElementById("siteinfo")
+    //添加链路信息的各个对象
+    let popLineBox = document.getElementById("popLineBox");
+    let input_point1 = document.getElementById("point1")
+    let input_point2 = document.getElementById("point2")
+    let input_linetype = document.getElementById("linetype")
+    let input_linename = document.getElementById("linename")
+    let input_lineinfo = document.getElementById("lineinfo")
+    let input_linelen = document.getElementById("linelen")
+    //添加按钮对象
+    let btn1=document.getElementById('normal');
+    let btn2=document.getElementById('addsite');
+    let btn3=document.getElementById('addline');
+    //全局变量
+    let map; //地图对象
+    let new_marker; //新标注对象
+    let new_line;//新链路对象
+    let sta=1; //主要用来控制点击事件，1表示查看，2表示添加新的站点，3表示添加新的链路
+    let hashmap=new Map();
+    //以下4个变量，sta=3时使用
+    let startPoint; //起点
+    let startname;
+    let endPoint; //终点
+    let endname;
+    let flag=0; //0表示未选，1表示起点，2表示终点
+    let temp_polyline; //存储新链路的对象
 
-    var btn1=document.getElementById('normal');
-    var btn2=document.getElementById('addSite');
-    var btn3=document.getElementById('addLink');
-    let status=1;  //表示选中哪个按钮
-    function normal() {
+    let addsite_url =  "http://localhost:8888/site/addsite";
+    let addline_url =  "http://localhost:8888/siteline/addline";
+    let paint_url =  "http://localhost:8888/siteline/findPaintInfo";
+
+    init_map();
+
+    function init_map() {
+        //百度地图API功能
+        map = new BMap.Map("allmap");
+        map.centerAndZoom(new BMap.Point(108.94704,37.347507),5);//根据坐标初始化地图
+        map.enableScrollWheelZoom(true);
+        map.enableAutoResize();
+        map.addControl(new BMap.NavigationControl());   //平移缩放控件
+        map.addControl(new BMap.ScaleControl());        //比例尺
+        map.addControl(new BMap.OverviewMapControl());  //缩略地图
+        requestPaintInfo();
+    }
+    function createXMLHttpRequest() {
+        var xmlhttp = null;
+        if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        return xmlhttp;
+    }
+    function getTime() {
+        var date = new Date();
+        return date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+    }
+
+    function btn_normal() {
         btn1.style.border=="000000";
         btn2.style.border=="668B8B";
         btn3.style.border=="668B8B";
-        status=1;
-        normal_fun(map,status);
+        sta=1;
     }
-    function addsite() {
+    function btn_addsite() {
         btn1.style.border=="668B8B";
         btn2.style.border=="000000";
         btn3.style.border=="668B8B";
-        status=2;
-        add_site(map,status);
-    }
+        sta=2;
+        map.addEventListener("click",function(e){
+            if(sta==2){
+                new_marker = new BMap.Marker(e.point,
+                    {
+                        // 指定Marker的icon属性为Symbol
+                        // @ts-ignore
+                        icon: new BMap.Symbol(BMap_Symbol_SHAPE_POINT, {
+                            scale: 1, // 图标缩放大小
+                            fillColor: 'red', // 填充颜色
+                            fillOpacity: 0.8, // 填充透明度
+                        }),
+                    });
+                map.addOverlay(new_marker);
 
-    function addlink(){
+
+                input_lng.value = e.point.lng;
+                input_lat.value = e.point.lat;
+                let gc = new BMap.Geocoder();
+                gc.getLocation(e.point, function(rs) {
+                    var addComp = rs.addressComponents;
+                    /*var mapAddress = addComp.province+addComp.city + addComp.district
+                        + addComp.street + addComp.streetNumber;*/
+                    input_sitename.value=addComp.city;
+                });
+
+                var choice=confirm("确定要添加此站点吗？");
+                if(choice){
+                    btn_popSiteBox();
+                    // 构建label 样式 添加文字标签
+                    const content =
+                        '<div>' +
+                        '<div style="transform: translateX(-50%);' +
+                        'position: absolute;' +
+                        'left: 50%;">' + input_sitename.value + '</div>' +
+                        '</div>';
+                    const label = new BMap.Label(content, { offset: new BMap.Size(10, 25) });
+                    label.setStyle({ border: 'none', padding: 0, fontWeight: 'bold', fontSize: '14px' }); // 去边框
+                    new_marker.setLabel(label);
+
+                }else{
+                    map.removeOverlay(new_marker);
+                }
+            }
+        });
+    }
+    function btn_addline(){
         btn1.style.border=="668B8B";
         btn2.style.border=="668B8B";
         btn3.style.border=="000000";
-        status=3;
-        draw_line(map,status);
+        sta=3;
+    }
+
+    function btn_popSiteBox() {
+        popSiteBox.style.display = "block";
+        popLayer.style.display = "block";
+    };
+    function btn_closeSiteBox() {
+        popSiteBox.style.display = "none";
+        popLayer.style.display = "none";
+        map.removeOverlay(new_marker);
+    }
+    function closeSiteBox() {
+        popSiteBox.style.display = "none";
+        popLayer.style.display = "none";
+    }
+    function btn_popLineBox() {
+        popLineBox.style.display = "block";
+        popLayer.style.display = "block";
+    };
+    function btn_closeLineBox() {
+        popLineBox.style.display = "none";
+        popLayer.style.display = "none";
+        map.removeOverlay(new_line);
+    }
+    function closeLineBox() {
+        popLineBox.style.display = "none";
+        popLayer.style.display = "none";
+    }
+
+    function addsiteInfo() {
+        var val_sitename = input_sitename.value;
+        var val_sitelevel = input_sitelevel.value;
+        var val_sitetype = input_sitetype.value;
+        var val_lng = input_lng.value;
+        var val_lat = input_lat.value;
+        var val_siteaddress = input_siteaddress.value;
+        var val_siteinfo = input_siteinfo.value;
+        console.log("val_sitename:"+val_sitename);
+        console.log("val_sitelevel:"+val_sitelevel);
+        console.log("val_sitetype:"+val_sitetype);
+        console.log("val_lng:"+val_lng);
+        console.log("val_lat:"+val_lat);
+        console.log("val_siteaddress:"+val_siteaddress);
+        console.log("val_siteinfo:"+val_siteinfo);
+        //将数据信息转化为json
+        var json = [];
+        var j = {};
+        j.val_sitename = val_sitename;
+        j.val_sitelevel = val_sitelevel;
+        j.val_sitetype = val_sitetype;
+        j.val_lng = val_lng;
+        j.val_lat = val_lat;
+        j.val_siteaddress = val_siteaddress;
+        j.val_siteinfo = val_siteinfo;
+        json.push(j);
+        let json_str=JSON.stringify(json);
+        console.log("site_json_str:"+json_str);
+        requestaddSite(json_str);
+    }
+    function requestaddSite(str)
+    {
+        let xmlHttp = createXMLHttpRequest();
+        if (xmlHttp == null) {
+            alert('not allow ajax');
+            return;
+        }
+        xmlHttp.open("POST", addsite_url, true);
+        xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+        xmlHttp.setRequestHeader('Content-type', 'application/json');
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                closeSiteBox();
+            }
+        }; //call back when ready
+        xmlHttp.send(str);
+    }
+
+    function addlineInfo() {
+        var val_point1 = input_point1.value;
+        var val_point2 = input_point2.value;
+        var val_linetype = input_linetype.value;
+        var val_linename = input_linename.value;
+        var val_lineinfo  = input_lineinfo .value;
+        var val_linelen = input_linelen.value;
+        console.log("val_point1:"+val_point1);
+        console.log("val_point2:"+val_point2);
+        console.log("val_linetype:"+val_linetype);
+        console.log("val_linename:"+val_linename);
+        console.log("val_lineinfo:"+val_lineinfo);
+        console.log("val_linelen:"+val_linelen);
+        //将数据信息转化为json
+        var json = [];
+        var j = {};
+        j.val_point1 = val_point1;
+        j.val_point2 = val_point2;
+        j.val_linetype = val_linetype;
+        j.val_linename = val_linename;
+        j.val_lineinfo = val_lineinfo;
+        j.val_linelen = val_linelen;
+        json.push(j);
+        let json_str=JSON.stringify(json);
+        console.log("line_json_str:"+json_str);
+        requestaddLine(json_str);
+    }
+    function requestaddLine(str)
+    {
+        let xmlHttp = createXMLHttpRequest();
+        if (xmlHttp == null) {
+            alert('not allow ajax');
+            return;
+        }
+        xmlHttp.open("POST", addline_url, true);
+        xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+        xmlHttp.setRequestHeader('Content-type', 'application/json');
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+                closeLineBox();
+            }
+        }; //call back when ready
+        xmlHttp.send(str);
+    }
+
+    function requestPaintInfo()
+    {
+        let paint_xmlHttp = createXMLHttpRequest();
+        if (paint_xmlHttp == null) {
+            alert('not allow ajax');
+            return;
+        }
+        paint_xmlHttp.open("GET", paint_url, true);
+        paint_xmlHttp.setRequestHeader('Access-Control-Allow-Origin', '*');
+        paint_xmlHttp.setRequestHeader('Content-type', 'application/json');
+        paint_xmlHttp.onreadystatechange = function () {
+            PaintInfoCallBack(paint_xmlHttp);
+        }; //call back when ready
+        paint_xmlHttp.send();
+    }
+    function PaintInfoCallBack(xmlHttp) {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200) { // finish
+            let paintInfo = JSON.parse(xmlHttp.responseText);
+            let siteData=paintInfo[0]["siteInfo"];
+            let siteLineData=paintInfo[0]["siteLinkInfo"];
+            console.log("siteInfo:"+siteData);
+            console.log("siteLinkInfo:"+siteLineData);
+            //可以改变一下标志
+            createLevel(siteData,map, 1, 'red');
+            createLevel(siteData,map, 2, 'blue');
+            createLevel(siteData,map, 3, 'green');
+            //createLine(siteData,siteLineData,map);
+        }
+    }
+
+    /** 创建坐标 */
+    function createLevel(siteData,map, level, color) {
+        let jsonArray = JSON.parse(siteData);
+        for (let i = 0; i < jsonArray.length; i++) {
+            if (jsonArray[i]["site_level"] == level) {
+                let x = jsonArray[i]["site_localx"];
+                let y = jsonArray[i]["site_localy"];
+                let point = new BMap.Point(x,y);
+                addMarker(map, point, color, jsonArray[i]);
+            }
+        }
+    }
+    /** 创建标注 */
+    function addMarker(map, point, color, locationInfo) {
+        // 设置marker图标为水滴
+        const marker = new BMap.Marker(point,
+            {    // 指定Marker的icon属性为Symbol
+                // @ts-ignore
+                icon: new BMap.Symbol(BMap_Symbol_SHAPE_POINT, {
+                    scale: 1, // 图标缩放大小
+                    fillColor: color, // 填充颜色
+                    fillOpacity: 0.8, // 填充透明度
+                }),
+            });
+        map.addOverlay(marker);
+
+        // 构建label 样式 添加文字标签
+        const content =
+            '<div>' +
+            '<div style="transform: translateX(-50%);' +
+            'position: absolute;' +
+            'left: 50%;">' + locationInfo["site_name"] + '</div>' +
+            '</div>';
+        const label = new BMap.Label(content, { offset: new BMap.Size(10, 25) });
+        label.setStyle({ border: 'none', padding: 0, fontWeight: 'bold', fontSize: '14px' }); // 去边框
+        marker.setLabel(label);
+
+        // 构建信息窗口
+        const opw = this.openInfo(locationInfo, point, map);
+        // 注册点击事件,弹出信息窗口
+        marker.addEventListener('click', (e) => {
+                if(sta==3){
+                    if(flag==0){
+                        flag=1; //确定起点
+                        startPoint=marker.getPosition();
+                        startname=locationInfo["site_name"];
+                        input_point1.value=startname;
+                    }
+                    else if(flag==1){
+                        flag=2;
+                        endPoint=marker.getPosition();
+                        endname=locationInfo["site_name"];
+                        input_point2.value=endname;
+                        if(flag==2){
+                            flag=0;
+                            new_line = new BMap.Polyline([startPoint,endPoint], {strokeColor:"red",//设置颜色
+                                strokeWeight:3, //宽度
+                                strokeOpacity:0.5});//透明度
+                            map.addOverlay(new_line);
+                            var choice=confirm("确定要添加此链路吗？");
+                            if(choice){
+                                btn_popLineBox();
+                            }else{
+                                map.removeOverlay(new_line);
+                            }
+                        }
+                    }
+                }
+            },
+        );
+        // 鼠标移入时触发
+        marker.addEventListener('mouseover', (e) => {
+                if(sta==3){
+                    if(flag==1){
+                        temp_polyline = new BMap.Polyline([startPoint,marker.getPosition()], {strokeColor:"red",//设置颜色
+                            strokeWeight:3, //宽度
+                            strokeOpacity:0.5});//透明度
+                        map.addOverlay(temp_polyline);
+                    }
+                }
+                else if(sta==1){
+                    map.openInfoWindow(opw, point); // 开启信息窗口
+                }
+            },
+        );
+        // 鼠标移出时触发
+        marker.addEventListener('mouseout', e => {
+
+                if(sta==3){
+                    if(flag==1){
+                        map.removeOverlay(temp_polyline);
+                    }
+                }else{
+                    //map.openInfoWindow(opw, point); // 开启信息窗口
+                }
+            },
+        );
+    }
+    /** 注册内容框的弹出事件 */
+    function openInfo(content, point, map) {
+        const opts = {
+            // width: 250,     // 信息窗口宽度
+            // height: 80,     // 信息窗口高度
+            title: '基本信息', // 信息窗口标题
+            enableMessage: true, // 设置允许信息窗发送短息
+            offset: new BMap.Size(0, -23),
+        };
+        const sContent = '<table align="center">' +
+            '<tbody>' +
+            '  <tr>' +
+            '    <td>名称：</td>' +
+            '    <td> ' + content["site_name"]+ '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>站点级别：</td>' +
+            '    <td>' + content["site_name"]+ '级</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>编址码：</td>' +
+            '    <td>000000000000001</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>地址：</td>' +
+            '    <td> ' + content["site_name"] + '市xxxx区xxxx路</td>' +
+            '  </tr>' +
+            // '  <tr>' +
+            // '    <td><a>详情</a></td>' +
+            // '    <td><a>查看组态图</a></td>' +
+            // '  </tr>' +
+            '</tbody>' +
+            '</table>';
+        const infoWindow = new BMap.InfoWindow(sContent, opts);  // 创建信息窗口对象
+        return infoWindow;
+        // map.openInfoWindow(infoWindow, point); // 开启信息窗口
+    }
+
+    // 创建连线
+    function createLine(siteData,siteLineData,map) {
+        let siteArray = JSON.parse(siteData);
+        let lineArray = JSON.parse(siteLineData);
+        console.log("lineArray:"  + lineArray.length);
+        for(let a=0;a<siteArray.length;a++){
+            let xx = siteArray[a]["site_localx"];
+            let yy = siteArray[a]["site_localy"];
+            let temp_point=new BMap.Point(xx,yy);
+            hashmap.set(siteArray[a]["site_name"],temp_point);
+        }
+        for(let i=0;i<lineArray.length;i++){
+            console.log("point1:"  + lineArray[i]["point1"]);
+            console.log("point2:"  + lineArray[i]["point2"]);
+            let point1=hashmap.get(lineArray[i]["point1"]);
+            let point2=hashmap.get(lineArray[i]["point2"]);
+            let line = [point1,point2];
+            addLine(map, line);
+            console.log("success" );
+        }
+    }
+    // 创建连线
+    function addLine(map, line) {
+        // 创建弧线对象
+        //  const curve = new BMapLib.CurveLine(line, { strokeColor: '#000000', strokeWeight: 3, strokeOpacity: 0.5 });
+        // @ts-ignore
+        const sy = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
+            scale: 0.6, // 图标缩放大小
+            strokeColor: '#fff', // 设置矢量图标的线填充颜色
+            strokeWeight: '1', // 设置线宽
+        });
+        const icons = new BMap.IconSequence(sy, '10', '30');
+        // 创建折线
+        let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5, icons: [icons] });
+        map.addOverlay(polyline);
+
+        // setTimeout(polyline.setStrokeColor('red'), 5000);
+        /*this.timer = setInterval(() => {
+            const color = ['#33FF00', '#F7F709', '#F70909'];
+            const a = Math.floor(Math.random() * 3);
+            polyline.setStrokeColor(color[a]);
+            console.log('变色');
+        }, 2000);*/
     }
 
 </script>
-
 </body>
 </html>

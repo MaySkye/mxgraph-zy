@@ -2,7 +2,9 @@ let hashmap=new Map();
 let sta=1; //主要用来控制点击事件，1表示查看，2表示添加新的站点，3表示添加新的链路
 //以下4个变量，sta=3时使用
 let startPoint; //起点
+let startname;
 let endPoint; //终点
+let endname;
 let flag=0; //0表示未选，1表示起点，2表示终点
 let temp_polyline; //存储新链路的对象
 function createXMLHttpRequest() {
@@ -50,7 +52,7 @@ function PaintInfoCallBack(map,xmlHttp) {
         createLevel(siteData,map, 1, 'red');
         createLevel(siteData,map, 2, 'blue');
         createLevel(siteData,map, 3, 'green');
-        createLine(siteData,siteLineData,map);
+        //createLine(siteData,siteLineData,map);
 
         return true;
     }else{
@@ -107,18 +109,23 @@ function addMarker(map, point, color, locationInfo) {
                     flag=1; //确定起点
                     //alert("确定起点成功");
                     startPoint=marker.getPosition();
+                    startname=locationInfo["site_name"];
                 }
                 else if(flag==1){
                     flag=2;
                     //alert("确定终点成功");
                     endPoint=marker.getPosition();
-
+                    endname=locationInfo["site_name"];
                     if(flag==2){
                         flag=0;
                         let polyline1 = new BMap.Polyline([startPoint,endPoint], {strokeColor:"red",//设置颜色
                             strokeWeight:3, //宽度
                             strokeOpacity:0.5});//透明度
                         map.addOverlay(polyline1);
+                        //弹出信息框???
+
+
+
                     }
                 }
 
@@ -139,7 +146,6 @@ function addMarker(map, point, color, locationInfo) {
             }
         },
     );
-
     // 鼠标移入时触发
     marker.addEventListener('mouseover', (e) => {
             if(sta==3){
@@ -301,7 +307,7 @@ function normal_fun(map,status) {
 }
 function add_site(map,status) {
     sta=status;
-    map.addEventListener("click",function(e){
+   /* map.addEventListener("click",function(e){
         if(sta==2){
             const marker1 = new BMap.Marker(e.point,
                 {
@@ -314,8 +320,10 @@ function add_site(map,status) {
                     }),
                 });
             map.addOverlay(marker1);
+
+
         }
-    });
+    });*/
     /*  var address=e.point.lng + "," + e.point.lat;
       $("#pointaddress").attr("value",address);
       var pt = e.point;

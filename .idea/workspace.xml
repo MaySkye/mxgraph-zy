@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da898b9-d9a6-4be0-9f90-56fae25ada86" name="Default" comment="sitemap.html的有关操作">
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/js/npm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" beforeDir="false" afterPath="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,57 +34,57 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="22" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#createXMLHttpRequest#0" />
-                <element signature="n#!!block;n#getTime#0" />
-                <element signature="n#!!block;n#requestSiteLineInfo#0" />
-                <element signature="n#!!block;n#createLevel#0" />
-                <element signature="n#!!block;n#addMarker#0" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#!!block;n#openInfo#0" />
-                <element signature="n#!!block;n#createLine#0" />
-                <element signature="n#!!block;n#addLine#0" />
-                <element signature="n#!!block;n#normal_fun#0" />
-                <element signature="n#!!block;n#add_site#0" />
-                <element signature="n#!!block;n#draw_line#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1366">
-              <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!block;n#createXMLHttpRequest#0" />
-                <element signature="n#!!block;n#getTime#0" />
-                <element signature="n#!!block;n#addMarker#0" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#!!block;n#openInfo#0" />
-                <element signature="n#!!block;n#paint#0" />
-                <element signature="n#!!block;n#normal_fun#0" />
-                <element signature="n#!!block;n#add_site#0" />
-                <element signature="n#!!block;n#draw_line#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+            <state relative-caret-position="1">
+              <caret line="317" column="5" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
+              <folding>
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#5587#5594#1" expanded="true" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#8680#8687#1" expanded="true" />
+                <element signature="e#12721#12737#0" />
+                <element signature="e#9792#10115#0" />
+                <element signature="e#10139#10261#0" />
+                <element signature="e#2703#2871#0" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#3085#3252#0" />
+                <element signature="e#4739#4942#0" />
+                <element signature="e#15191#15442#0" />
+                <element signature="e#15294#15511#0" />
+                <element signature="e#15556#15807#0" />
+                <element signature="e#12490#12581#0" />
+                <element signature="e#15712#16858#0" />
+                <element signature="e#16898#17549#0" />
+                <element signature="e#17591#18197#0" />
+                <element signature="e#15745#16311#0" />
+                <element signature="e#17073#17716#0" />
+                <element signature="e#20007#20736#0" />
+                <element signature="e#18481#18913#0" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#21212#21646#0" />
+                <element signature="e#21715#21945#0" />
+                <element signature="e#22013#23107#0" />
+                <element signature="e#23163#25251#0" />
+                <element signature="e#25288#26162#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,9 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Run</find>
-      <find>open</find>
-      <find>run</find>
       <find>openFile</find>
       <find>EditorUi</find>
       <find>editorui</find>
@@ -108,6 +123,15 @@
       <find>overlaycomplete</find>
       <find>data</find>
       <find>createLevel</find>
+      <find>editd</find>
+      <find>EditDetectedValue</find>
+      <find>jquery</find>
+      <find>jquery.min.js</find>
+      <find>box</find>
+      <find>http://localhost:8888</find>
+      <find>starts</find>
+      <find>closeSiteBox1</find>
+      <find>pop</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -127,8 +151,8 @@
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/sitelink.js" />
-        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" />
         <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js" />
+        <option value="$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html" />
       </list>
     </option>
   </component>
@@ -150,12 +174,15 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="466" />
-    <option name="y" value="51" />
-    <option name="width" value="1482" />
+    <option name="x" value="-384" />
+    <option name="y" value="69" />
+    <option name="width" value="1140" />
     <option name="height" value="975" />
   </component>
   <component name="ProjectId" id="1S334PdPmlaTqZ5exy1E2tjET1U" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -168,6 +195,17 @@
             <path>
               <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="mxgraph-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mxgraph-master" type="462c0819:PsiDirectoryNode" />
+              <item name="dotnet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mxgraph-master" type="462c0819:PsiDirectoryNode" />
+              <item name="dotnet" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
@@ -211,7 +249,7 @@
               <item name="examples" type="462c0819:PsiDirectoryNode" />
               <item name="grapheditor" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="sitemap" type="462c0819:PsiDirectoryNode" />
+              <item name="js_ww" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mxgraph-master" type="b2602c69:ProjectViewProjectNode" />
@@ -230,7 +268,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576479635178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576639442592" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../fiber-monitor-system-server" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -238,21 +276,21 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.CVS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\images" />
-      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\config" />
-      <recent name="D:\LearnedProject\wangwei\mxgraph-master\mxgraph-master\javascript\examples\grapheditor\www\images" />
-      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
-      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww" />
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\home" />
       <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
       <recent name="D:\LearnedProject\mxgraph-master\mxgraph-master\java\examples\com\mxgraph\examples\swing\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\bootstrap" />
+      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\images" />
+      <recent name="D:\Graduation\mxgraph-master\javascript\examples\grapheditor\www\config" />
+      <recent name="D:\LearnedProject\wangwei\mxgraph-master\mxgraph-master\javascript\examples\grapheditor\www\images" />
+      <recent name="C:\Users\55044\Desktop\北邮项目\mxgraph-master\javascript\examples\grapheditor\www\js_ww\frame" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -380,7 +418,7 @@
       <workItem from="1575896509669" duration="1805000" />
       <workItem from="1575947730511" duration="11243000" />
       <workItem from="1575985192524" duration="31192000" />
-      <workItem from="1576461064571" duration="7714000" />
+      <workItem from="1576461064571" duration="40774000" />
     </task>
     <task id="LOCAL-00001" summary="sitemap.html的有关操作">
       <created>1576468626497</created>
@@ -389,16 +427,23 @@
       <option name="project" value="LOCAL" />
       <updated>1576468626497</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sitemap.html的有关操作">
+      <created>1576479717894</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576479717894</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115446000" />
+    <option name="totallyTimeSpent" value="148506000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.21827" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.21261115" />
       <window_info id="Structure" order="1" sideWeight="0.17118998" side_tool="true" weight="0.22473727" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -406,8 +451,8 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.43970317" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69199675" weight="0.15769945" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43970317" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.69199675" weight="0.6567718" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.16512059" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -416,9 +461,9 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.30800325" side_tool="true" weight="0.111317255" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4995958" weight="0.3283859" />
-      <window_info anchor="bottom" id="Problems" order="11" />
+      <window_info anchor="bottom" id="Problems" order="11" weight="0.3283859" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.5473098" />
       <window_info anchor="bottom" id="Statistic" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -426,9 +471,9 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Maven" order="5" weight="0.32983023" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.32983023" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.82881004" visible="true" weight="0.22473727" />
@@ -466,6 +511,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sitemap.html的有关操作" />
@@ -513,9 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/vue_global.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Menus.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -529,16 +597,6 @@
             <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#pre#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#blockquote#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/action_ww.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="290" selection-start-line="290" selection-end-line="290" />
-          <folding>
-            <element signature="e#11#11464#0" />
           </folding>
         </state>
       </provider>
@@ -578,13 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11850">
           <caret line="474" column="44" selection-start-line="474" selection-start-column="44" selection-end-line="474" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -672,56 +723,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="341" column="27" selection-start-line="341" selection-start-column="16" selection-end-line="341" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!block;n#InitSiteName#0" />
-            <element signature="n#!!block;n#getCellById#0" />
-            <element signature="n#!!block;n#collectDeviceId#0" />
-            <element signature="n#!!block;n#collectMonitorInfo#0" />
-            <element signature="n#!!block;n#sendCloseCmd#0" />
-            <element signature="n#style#0;n#mxCell#0;n#MyObject#0;n#root#0;n#mxGraphModel#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="113" column="35" lean-forward="true" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#center#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/open.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3900" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/OpenGraph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/config/site_info.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="58" column="6" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap3.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -740,6 +748,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/EditorUi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2675">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/resources/grapheditor.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="264" selection-start-line="264" selection-end-line="264" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/frame/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1575">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/vue_global.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/bootstrap/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dotnet/docs/html/dir_b39b5091e8d1d2be4b7fc59d57749634.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -765,27 +822,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+        <state relative-caret-position="-2184">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#center#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/OpenGraph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="99" column="12" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap/paintMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1366">
-          <caret line="261" column="9" selection-start-line="261" selection-start-column="9" selection-end-line="261" selection-end-column="9" />
+        <state>
+          <caret selection-end-line="340" selection-end-column="1" />
           <folding>
             <element signature="n#!!block;n#createXMLHttpRequest#0" />
             <element signature="n#!!block;n#getTime#0" />
-            <element signature="n#!!block;n#addMarker#0" />
+            <element signature="n#!!block;n#requestSiteInfo#0" />
+            <element signature="n#!!block;n#siteCallBack#0" />
+            <element signature="n#!!block;n#createLevel#0" />
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#4075#4175#0" />
+            <element signature="e#4231#4335#0" />
+            <element signature="e#4408#4829#0" />
+            <element signature="e#4898#5100#0" />
             <element signature="n#!!block;n#openInfo#0" />
+            <element signature="n#!!block;n#createLine#0" />
+            <element signature="n#!!block;n#addLine#0" />
             <element signature="n#!!block;n#paint#0" />
             <element signature="n#!!block;n#normal_fun#0" />
             <element signature="n#!!block;n#add_site#0" />
             <element signature="n#!!block;n#draw_line#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js_ww/action_ww.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-750">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/js/Actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!block;n#InitSiteName#0" />
+            <element signature="n#!!block;n#getCellById#0" />
+            <element signature="n#!!block;n#collectDeviceId#0" />
+            <element signature="n#!!block;n#collectMonitorInfo#0" />
+            <element signature="n#!!block;n#sendCloseCmd#0" />
+            <element signature="n#style#0;n#mxCell#0;n#MyObject#0;n#root#0;n#mxGraphModel#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/examples/grapheditor/www/sitemap.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="317" column="5" selection-start-line="317" selection-start-column="5" selection-end-line="317" selection-end-column="5" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#5587#5594#1" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#8680#8687#1" expanded="true" />
+            <element signature="e#12721#12737#0" />
+            <element signature="e#9792#10115#0" />
+            <element signature="e#10139#10261#0" />
+            <element signature="e#2703#2871#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#3085#3252#0" />
+            <element signature="e#4739#4942#0" />
+            <element signature="e#15191#15442#0" />
+            <element signature="e#15294#15511#0" />
+            <element signature="e#15556#15807#0" />
+            <element signature="e#12490#12581#0" />
+            <element signature="e#15712#16858#0" />
+            <element signature="e#16898#17549#0" />
+            <element signature="e#17591#18197#0" />
+            <element signature="e#15745#16311#0" />
+            <element signature="e#17073#17716#0" />
+            <element signature="e#20007#20736#0" />
+            <element signature="e#18481#18913#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#21212#21646#0" />
+            <element signature="e#21715#21945#0" />
+            <element signature="e#22013#23107#0" />
+            <element signature="e#23163#25251#0" />
+            <element signature="e#25288#26162#0" />
           </folding>
         </state>
       </provider>
