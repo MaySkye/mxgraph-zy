@@ -1,0 +1,6012 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based", "en", "undefined" ],
+    "title" : {
+      "en" : "Sensor, Observation, Sample, and Actuator (SOSA) Ontology"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/",
+    "author" : [ "_:genid1" ],
+    "description" : {
+      "en" : "This ontology is based on the SSN Ontology by the W3C Semantic Sensor Networks Incubator Group (SSN-XG), together with considerations from the W3C/OGC Spatial Data on the Web Working Group."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://www.opengeospatial.org/ogc/Software",
+        "type" : "iri"
+      }, {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2017-04-17",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "sosa",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright 2017 W3C/OGC.",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "label"
+      } ]
+    }
+  },
+  "metrics" : {
+    "classCount" : 206,
+    "datatypeCount" : 38,
+    "objectPropertyCount" : 12,
+    "datatypePropertyCount" : 38,
+    "propertyCount" : 50,
+    "nodeCount" : 244,
+    "axiomCount" : 1088,
+    "individualCount" : 18
+  },
+  "class" : [ {
+    "id" : "class33",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class184",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class157",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class139",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class186",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class190",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class78",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class13",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class172",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class125",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class145",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class113",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class156",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class105",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class148",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class38",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class116",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class5",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class134",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class161",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class178",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class176",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class126",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class90",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class51",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class56",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class122",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class173",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class35",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class147",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class40",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class174",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class204",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class203",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class23",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class84",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class197",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class170",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class155",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class128",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class50",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class163",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class43",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class83",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class3",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class46",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class16",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class25",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class41",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class103",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class202",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class12",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class205",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class110",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class192",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class136",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class26",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class127",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class154",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class191",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class199",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class188",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class9",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class160",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class183",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class30",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class1",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class150",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class168",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class129",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class61",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class55",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class92",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class165",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class49",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class194",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class171",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class39",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class159",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class88",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class91",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class45",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class85",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class115",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class27",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class57",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class180",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class123",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class177",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class201",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class14",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class135",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class62",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class100",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class198",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class22",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class65",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class47",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class28",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class72",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class111",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class132",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class164",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class121",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class153",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class187",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class7",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class36",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class60",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class181",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class58",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class71",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class206",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class44",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class131",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class149",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class48",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class74",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class108",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class114",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class6",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class193",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class10",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class166",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class138",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class2",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class142",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class189",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class182",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class106",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class66",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class80",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class175",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class29",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class117",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class97",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class31",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class19",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class96",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class109",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class133",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class162",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class104",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class73",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class87",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class119",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class124",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class8",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class146",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class151",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class59",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class76",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class69",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class64",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class67",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class152",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class195",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class101",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class63",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class77",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class42",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class53",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class81",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class11",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class102",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class118",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class200",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class167",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class196",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class137",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class143",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class94",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class37",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class95",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class98",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "class99",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class33",
+    "label" : {
+      "IRI-based" : "光频_离子泵电流传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_离子泵电流传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class179",
+    "label" : {
+      "IRI-based" : "光频_遥测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥测行为",
+    "subClasses" : [ "class61", "class14", "class182", "class115", "class88", "class111", "class84", "class170", "class39", "class104", "class181", "class202" ],
+    "superClasses" : [ "class158" ],
+    "instances" : 0
+  }, {
+    "id" : "class184",
+    "label" : {
+      "IRI-based" : "微波_累计传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_累计传感器",
+    "superClasses" : [ "class129" ],
+    "instances" : 0
+  }, {
+    "id" : "class157",
+    "label" : {
+      "IRI-based" : "时间设定量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间设定量",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class109" ],
+    "instances" : 0
+  }, {
+    "id" : "class24",
+    "label" : {
+      "IRI-based" : "测试站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/测试站",
+    "superClasses" : [ "class106" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/郑州",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/郑州"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class141",
+    "label" : {
+      "IRI-based" : "光纤时间同步分系统监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步分系统监测行为",
+    "subClasses" : [ "class185", "class93", "class54", "class18" ],
+    "superClasses" : [ "class80" ],
+    "instances" : 0
+  }, {
+    "id" : "class139",
+    "label" : {
+      "IRI-based" : "光纤稳频激光器单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤稳频激光器单元",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class186",
+    "label" : {
+      "IRI-based" : "光纤时间同步远程端设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步远程端设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class190",
+    "label" : {
+      "IRI-based" : "时间_输出功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输出功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class78",
+    "label" : {
+      "IRI-based" : "微波_信号频率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号频率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class108", "class163" ]
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "光频_电源状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_电源状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class172",
+    "label" : {
+      "IRI-based" : "时间光纤多路由切换设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间光纤多路由切换设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class125",
+    "label" : {
+      "IRI-based" : "光频_再生光输出功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光输出功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class145", "class66", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class145",
+    "label" : {
+      "IRI-based" : "光频_环内拍频信号"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环内拍频信号",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_环内拍频信号A1.31",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_环内拍频信号A1.31"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://www.w3.org/ns/sosa/光频_环内拍频信号A1.30",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_环内拍频信号A1.30"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class198", "class33", "class125", "class13", "class85", "class71", "class64", "class121", "class139", "class25", "class153", "class115", "class181", "class88", "class101", "class170", "class77", "class65", "class14", "class32", "class191", "class114", "class81", "class83", "class73", "class111", "class39", "class66", "class49", "class177", "class138", "class174", "class162", "class90", "class171", "class199", "class182", "class148", "class128", "class35", "class98", "class206", "class46", "class154", "class37", "class143" ]
+  }, {
+    "id" : "class113",
+    "label" : {
+      "IRI-based" : "时间_远端设备编号"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_远端设备编号",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class197", "class190", "class72", "class168", "class26", "class3", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class58", "class99", "class43", "class204", "class127", "class155", "class30", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "微波频率传递分系统属性"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波频率传递分系统属性",
+    "subClasses" : [ "class159", "class96", "class2", "class28" ],
+    "superClasses" : [ "class51" ],
+    "instances" : 0
+  }, {
+    "id" : "class156",
+    "label" : {
+      "IRI-based" : "微波_设备运行状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_设备运行状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class205", "class146", "class123", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class105",
+    "label" : {
+      "IRI-based" : "多通道无缝切换设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/多通道无缝切换设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class148",
+    "label" : {
+      "IRI-based" : "光频_电源状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_电源状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class198", "class13", "class71", "class64", "class121", "class76", "class25", "class153", "class60", "class181", "class77", "class32", "class191", "class11", "class73", "class111", "class66", "class138", "class199", "class29", "class35", "class206", "class46", "class37", "class33", "class56", "class125", "class145", "class85", "class139", "class115", "class101", "class170", "class65", "class14", "class114", "class81", "class83", "class38", "class39", "class49", "class63", "class91", "class174", "class177", "class162", "class90", "class171", "class182", "class128", "class98", "class143" ]
+  }, {
+    "id" : "class38",
+    "label" : {
+      "IRI-based" : "光频_光纤链路运行状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光纤链路运行状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class126" ],
+    "instances" : 0,
+    "equivalent" : [ "class57", "class56", "class175", "class148" ]
+  }, {
+    "id" : "class116",
+    "label" : {
+      "IRI-based" : "微波_遥控传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥控传感器",
+    "superClasses" : [ "class129" ],
+    "instances" : 0
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "微波_输出功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输出功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class164", "class23", "class110", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class107",
+    "label" : {
+      "IRI-based" : "光频_遥信传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥信传感器",
+    "subClasses" : [ "class206", "class77", "class66", "class13", "class160", "class191" ],
+    "superClasses" : [ "class17" ],
+    "instances" : 0
+  }, {
+    "id" : "class134",
+    "label" : {
+      "IRI-based" : "守时钟驯服控制设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/守时钟驯服控制设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class161",
+    "label" : {
+      "IRI-based" : "光纤时间同步分系统设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步分系统设备",
+    "subClasses" : [ "class47", "class119", "class58", "class186", "class55", "class105", "class134", "class172", "class9" ],
+    "superClasses" : [ "class45" ],
+    "instances" : 0
+  }, {
+    "id" : "class178",
+    "label" : {
+      "IRI-based" : "光频_累计行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_累计行为",
+    "superClasses" : [ "class158" ],
+    "instances" : 0
+  }, {
+    "id" : "class120",
+    "label" : {
+      "IRI-based" : "微波_遥测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥测行为",
+    "subClasses" : [ "class135", "class108", "class22", "class150", "class156", "class123", "class23", "class142" ],
+    "superClasses" : [ "class200" ],
+    "instances" : 0
+  }, {
+    "id" : "class176",
+    "label" : {
+      "IRI-based" : "微波_累计行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_累计行为",
+    "superClasses" : [ "class200" ],
+    "instances" : 0
+  }, {
+    "id" : "class126",
+    "label" : {
+      "IRI-based" : "光频设定量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频设定量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class38" ],
+    "superClasses" : [ "class52" ],
+    "instances" : 0
+  }, {
+    "id" : "class90",
+    "label" : {
+      "IRI-based" : "EDFA中继器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/EDFA中继器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class51",
+    "label" : {
+      "IRI-based" : "ObservableProperty",
+      "en" : "Observable Property"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/ObservableProperty",
+    "comment" : {
+      "en" : "An observable quality (property, characteristic) of a FeatureOfInterest."
+    },
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class52", "class109", "class15" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An observable quality (property, characteristic) of a FeatureOfInterest.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The height of a tree, the depth of a water body, or the temperature of a surface are examples of observable properties, while the value of a classic car is not (directly) observable but asserted.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0,
+    "equivalent" : [ "class45", "class196", "class40", "class80" ]
+  }, {
+    "id" : "class56",
+    "label" : {
+      "IRI-based" : "光频光纤多路由切换设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频光纤多路由切换设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class148", "class38" ]
+  }, {
+    "id" : "class122",
+    "label" : {
+      "IRI-based" : "时间累计量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间累计量",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class109" ],
+    "instances" : 0
+  }, {
+    "id" : "class173",
+    "label" : {
+      "IRI-based" : "微波_设备运行状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_设备运行状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class74" ]
+  }, {
+    "id" : "class35",
+    "label" : {
+      "IRI-based" : "光频_接收端输入功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_接收端输入功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_接收端输入功率A1.28",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_接收端输入功率A1.28"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://www.w3.org/ns/sosa/光频_接收端输入功率A1.33",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_接收端输入功率A1.33"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class93",
+    "label" : {
+      "IRI-based" : "时间_遥信行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥信行为",
+    "subClasses" : [ "class67", "class137" ],
+    "superClasses" : [ "class141" ],
+    "instances" : 0
+  }, {
+    "id" : "class147",
+    "label" : {
+      "IRI-based" : "微波_链路锁定状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_链路锁定状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class159" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class110", "class23", "class95", "class48", "class10", "class142", "class102", "class205", "class118", "class6", "class146", "class123", "class42", "class156", "class135", "class50", "class21", "class173", "class192", "class74" ]
+  }, {
+    "id" : "class40",
+    "label" : {
+      "IRI-based" : "Sensor",
+      "en" : "Sensor"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "comment" : {
+      "en" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+    },
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class17", "class112", "class129" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a (Sensing) Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0,
+    "equivalent" : [ "class45", "class196", "class80", "class51" ]
+  }, {
+    "id" : "class174",
+    "label" : {
+      "IRI-based" : "光频_离子泵电流"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_离子泵电流",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_离子泵电流A1.32",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_离子泵电流A1.32"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class63", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class204",
+    "label" : {
+      "IRI-based" : "时间_光输出波长监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光输出波长监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class203",
+    "label" : {
+      "IRI-based" : "光纤光频传递分系统设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤光频传递分系统设备",
+    "subClasses" : [ "class90", "class139", "class64", "class71", "class56", "class128", "class166", "class63", "class198", "class16", "class11" ],
+    "superClasses" : [ "class45" ],
+    "instances" : 0
+  }, {
+    "id" : "class23",
+    "label" : {
+      "IRI-based" : "微波_输出功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输出功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class110", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class84",
+    "label" : {
+      "IRI-based" : "光频_相位噪声监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_相位噪声监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class189", "class41", "class29", "class202", "class16", "class61", "class76", "class94" ]
+  }, {
+    "id" : "class197",
+    "label" : {
+      "IRI-based" : "时间_远端设备编号传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_远端设备编号传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class113", "class30" ]
+  }, {
+    "id" : "class170",
+    "label" : {
+      "IRI-based" : "光频_离子泵电流监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_离子泵电流监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class155",
+    "label" : {
+      "IRI-based" : "时间_设备运行状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备运行状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class128",
+    "label" : {
+      "IRI-based" : "再生光中继器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/再生光中继器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class50",
+    "label" : {
+      "IRI-based" : "微波_输入功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输入功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class205", "class146", "class123", "class156", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class163",
+    "label" : {
+      "IRI-based" : "微波_信号频率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号频率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class78", "class108" ]
+  }, {
+    "id" : "class43",
+    "label" : {
+      "IRI-based" : "时间_光无源组件编号"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光无源组件编号",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class83",
+    "label" : {
+      "IRI-based" : "光频_链路锁定状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_链路锁定状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "时间_内部电路工作状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_内部电路工作状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class46",
+    "label" : {
+      "IRI-based" : "光频_环境温度传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环境温度传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class143" ]
+  }, {
+    "id" : "class16",
+    "label" : {
+      "IRI-based" : "拍频比对设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/拍频比对设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/拍频比对设备A1.29",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/拍频比对设备A1.29"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class91", "class189", "class41", "class84", "class29", "class202", "class61", "class76", "class94" ]
+  }, {
+    "id" : "class140",
+    "label" : {
+      "IRI-based" : "光频_遥控行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥控行为",
+    "subClasses" : [ "class57" ],
+    "superClasses" : [ "class158" ],
+    "instances" : 0
+  }, {
+    "id" : "class25",
+    "label" : {
+      "IRI-based" : "光频_光源锁定状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光源锁定状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class153", "class181", "class101", "class77", "class170", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class41",
+    "label" : {
+      "IRI-based" : "光频_频率稳定度传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_频率稳定度传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class189", "class84", "class29", "class202", "class16", "class61", "class76", "class94" ]
+  }, {
+    "id" : "class103",
+    "label" : {
+      "IRI-based" : "光频累计量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频累计量",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class52" ],
+    "instances" : 0
+  }, {
+    "id" : "class202",
+    "label" : {
+      "IRI-based" : "光频_频率稳定度监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_频率稳定度监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class189", "class41", "class84", "class29", "class16", "class61", "class76", "class94" ]
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "时间模拟量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间模拟量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class43", "class167", "class36", "class132", "class194", "class59", "class155", "class53", "class190", "class113" ],
+    "superClasses" : [ "class109" ],
+    "instances" : 0
+  }, {
+    "id" : "class205",
+    "label" : {
+      "IRI-based" : "微波光纤多路由切换设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波光纤多路由切换设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class110",
+    "label" : {
+      "IRI-based" : "信号净化设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/信号净化设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class192",
+    "label" : {
+      "IRI-based" : "同步子系统单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/同步子系统单元",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class102", "class118", "class48", "class142", "class135", "class21", "class147" ]
+  }, {
+    "id" : "class136",
+    "label" : {
+      "IRI-based" : "时间_遥测传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥测传感器",
+    "subClasses" : [ "class152", "class19", "class193", "class149", "class124", "class201", "class7", "class168", "class99", "class197" ],
+    "superClasses" : [ "class112" ],
+    "instances" : 0
+  }, {
+    "id" : "class130",
+    "label" : {
+      "IRI-based" : "光频_累计传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_累计传感器",
+    "superClasses" : [ "class17" ],
+    "instances" : 0
+  }, {
+    "id" : "class26",
+    "label" : {
+      "IRI-based" : "时间_设备状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class97" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class194", "class132", "class190", "class72", "class3", "class168", "class124", "class105", "class195", "class87", "class137", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class127",
+    "label" : {
+      "IRI-based" : "时间_输出功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输出功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class154",
+    "label" : {
+      "IRI-based" : "光频_环内拍频信号传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环内拍频信号传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class88", "class145" ]
+  }, {
+    "id" : "class191",
+    "label" : {
+      "IRI-based" : "光频_链路锁定状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_链路锁定状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class114" ]
+  }, {
+    "id" : "class199",
+    "label" : {
+      "IRI-based" : "光频_链路锁定状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_链路锁定状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class198", "class33", "class125", "class13", "class145", "class85", "class71", "class64", "class121", "class139", "class25", "class153", "class115", "class181", "class101", "class170", "class77", "class65", "class14", "class32", "class191", "class114", "class81", "class83", "class73", "class111", "class39", "class66", "class49", "class177", "class138", "class174", "class162", "class90", "class171", "class182", "class148", "class128", "class35", "class98", "class206", "class46", "class37", "class143" ]
+  }, {
+    "id" : "class188",
+    "label" : {
+      "IRI-based" : "微波_光输出波长传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_光输出波长传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class1", "class22" ]
+  }, {
+    "id" : "class34",
+    "label" : {
+      "IRI-based" : "微波_遥信传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥信传感器",
+    "subClasses" : [ "class42" ],
+    "superClasses" : [ "class129" ],
+    "instances" : 0
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "测试设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/测试设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class194", "class132", "class190", "class72", "class26", "class3", "class168", "class124", "class105", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class160",
+    "label" : {
+      "IRI-based" : "光频_设备工作状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_设备工作状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class60", "class31" ]
+  }, {
+    "id" : "class183",
+    "label" : {
+      "IRI-based" : "光频模拟量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频模拟量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class76", "class138", "class98", "class35", "class145", "class73", "class29", "class174", "class143", "class153", "class85", "class91" ],
+    "superClasses" : [ "class52" ],
+    "instances" : 0
+  }, {
+    "id" : "class30",
+    "label" : {
+      "IRI-based" : "时间_远端设备编号监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_远端设备编号监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class113", "class197", "class113", "class197" ]
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "微波_光输出波长"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_光输出波长",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class188", "class22" ]
+  }, {
+    "id" : "class150",
+    "label" : {
+      "IRI-based" : "微波_相位噪声监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_相位噪声监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class69", "class44", "class100" ]
+  }, {
+    "id" : "class168",
+    "label" : {
+      "IRI-based" : "时间_输入功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输入功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class129",
+    "label" : {
+      "IRI-based" : "微波频率传递分系统传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波频率传递分系统传感器",
+    "subClasses" : [ "class184", "class34", "class116", "class92" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class61",
+    "label" : {
+      "IRI-based" : "光频_光频传递指标监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光频传递指标监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class189", "class41", "class84", "class29", "class202", "class16", "class76", "class94" ]
+  }, {
+    "id" : "class55",
+    "label" : {
+      "IRI-based" : "同步网内实时闭环运控监控"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/同步网内实时闭环运控监控",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class194", "class132", "class190", "class72", "class26", "class3", "class168", "class124", "class105", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class92",
+    "label" : {
+      "IRI-based" : "微波_遥测传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥测传感器",
+    "subClasses" : [ "class21", "class163", "class188", "class100", "class173", "class50", "class5", "class48" ],
+    "superClasses" : [ "class129" ],
+    "instances" : 0
+  }, {
+    "id" : "class68",
+    "label" : {
+      "IRI-based" : "时间_遥控传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥控传感器",
+    "superClasses" : [ "class112" ],
+    "instances" : 0
+  }, {
+    "id" : "class165",
+    "label" : {
+      "IRI-based" : "时间_光板卡编号监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光板卡编号监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class167", "class53", "class8", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class49",
+    "label" : {
+      "IRI-based" : "光频_透射峰电压传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_透射峰电压传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class112",
+    "label" : {
+      "IRI-based" : "光纤时间同步分系统传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步分系统传感器",
+    "subClasses" : [ "class151", "class20", "class68", "class136" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class144",
+    "label" : {
+      "IRI-based" : "微波_遥控行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥控行为",
+    "superClasses" : [ "class200" ],
+    "instances" : 0
+  }, {
+    "id" : "class194",
+    "label" : {
+      "IRI-based" : "时间_时间同步指标"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_时间同步指标",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class190", "class72", "class26", "class3", "class168", "class124", "class105", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class171",
+    "label" : {
+      "IRI-based" : "光频_电源状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_电源状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class39",
+    "label" : {
+      "IRI-based" : "光频_输入功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输入功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class198", "class33", "class13", "class145", "class85", "class121", "class139", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class159",
+    "label" : {
+      "IRI-based" : "微波开关量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波开关量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class147" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class88",
+    "label" : {
+      "IRI-based" : "光频_环内拍频信号监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环内拍频信号监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class145", "class154", "class145", "class154" ]
+  }, {
+    "id" : "class91",
+    "label" : {
+      "IRI-based" : "光频_频率稳定度"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_频率稳定度",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_频率稳定度A1.29",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_频率稳定度A1.29"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class11", "class41", "class84", "class16", "class61", "class76", "class60", "class189", "class29", "class202", "class148", "class94" ]
+  }, {
+    "id" : "class54",
+    "label" : {
+      "IRI-based" : "时间_遥控行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥控行为",
+    "superClasses" : [ "class141" ],
+    "instances" : 0
+  }, {
+    "id" : "class45",
+    "label" : {
+      "IRI-based" : "FeatureOfInterest",
+      "en" : "Feature Of Interest"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+    "comment" : {
+      "en" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling."
+    },
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class203", "class161", "class70" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The thing whose property is being estimated or calculated in the course of an Observation to arrive at a Result or whose property is being manipulated by an Actuator, or which is being sampled or transformed in an act of Sampling.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "When measuring the height of a tree, the height is the observed ObservableProperty, 20m may be the Result of the Observation, and the tree is the FeatureOfInterest. A window is a FeatureOfInterest for an automatic window control Actuator.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0,
+    "equivalent" : [ "class196", "class40", "class80", "class51" ]
+  }, {
+    "id" : "class85",
+    "label" : {
+      "IRI-based" : "光频_透射峰电压"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_透射峰电压",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_透射峰电压A1.32",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_透射峰电压A1.32"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class63", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class115",
+    "label" : {
+      "IRI-based" : "光频_接收端输入功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_接收端输入功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class27",
+    "label" : {
+      "IRI-based" : "时间_光无源组件编号监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光无源组件编号监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193" ]
+  }, {
+    "id" : "class57",
+    "label" : {
+      "IRI-based" : "光频_光纤链路运行状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光纤链路运行状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class140" ],
+    "instances" : 0,
+    "equivalent" : [ "class38", "class175" ]
+  }, {
+    "id" : "class180",
+    "label" : {
+      "IRI-based" : "时间_电源状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_电源状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class97" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class36", "class119", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class123",
+    "label" : {
+      "IRI-based" : "微波_输入功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输入功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class205", "class146", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class177",
+    "label" : {
+      "IRI-based" : "光频_接收端输入功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_接收端输入功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class201",
+    "label" : {
+      "IRI-based" : "时间_源端设备编号传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_源端设备编号传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "光频_再生光输出功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光输出功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class135",
+    "label" : {
+      "IRI-based" : "微波_信号功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class102", "class118", "class48", "class142", "class21", "class147", "class192" ]
+  }, {
+    "id" : "class62",
+    "label" : {
+      "IRI-based" : "光频开关量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频开关量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class162", "class101", "class65", "class148", "class60", "class199" ],
+    "superClasses" : [ "class52" ],
+    "instances" : 0
+  }, {
+    "id" : "class100",
+    "label" : {
+      "IRI-based" : "微波_相位噪声传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_相位噪声传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class69", "class150", "class44" ]
+  }, {
+    "id" : "class198",
+    "label" : {
+      "IRI-based" : "双向EDFA设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/双向EDFA设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class22",
+    "label" : {
+      "IRI-based" : "微波_光输出波长监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_光输出波长监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class1", "class188", "class1", "class188" ]
+  }, {
+    "id" : "class65",
+    "label" : {
+      "IRI-based" : "光频_再生光激光器锁定状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光激光器锁定状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class148", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class47",
+    "label" : {
+      "IRI-based" : "三通道无缝切换设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/三通道无缝切换设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class3", "class26", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class193", "class27" ]
+  }, {
+    "id" : "class28",
+    "label" : {
+      "IRI-based" : "微波设定量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波设定量",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class72",
+    "label" : {
+      "IRI-based" : "时间_设备运行状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备运行状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class111",
+    "label" : {
+      "IRI-based" : "光频_环境温度监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环境温度监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class132",
+    "label" : {
+      "IRI-based" : "时间_内部电路工作状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_内部电路工作状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class194", "class190", "class72", "class3", "class26", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class119", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class164",
+    "label" : {
+      "IRI-based" : "微波_输出功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输出功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class23", "class110", "class95", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class121",
+    "label" : {
+      "IRI-based" : "光频_输入功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输入功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class198", "class33", "class13", "class145", "class85", "class139", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class153",
+    "label" : {
+      "IRI-based" : "光频_输出功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输出功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class71", "class64", "class121", "class25", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class63", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class187",
+    "label" : {
+      "IRI-based" : "二级站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/二级站",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class196" ],
+    "instances" : 0
+  }, {
+    "id" : "class185",
+    "label" : {
+      "IRI-based" : "时间_累计行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_累计行为",
+    "superClasses" : [ "class141" ],
+    "instances" : 0
+  }, {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "时间_设备运行状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备运行状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class36",
+    "label" : {
+      "IRI-based" : "时间_光输出波长"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光输出波长",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class18",
+    "label" : {
+      "IRI-based" : "时间_遥测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥测行为",
+    "subClasses" : [ "class27", "class165", "class204", "class3", "class195", "class117", "class72", "class8", "class127", "class30" ],
+    "superClasses" : [ "class141" ],
+    "instances" : 0
+  }, {
+    "id" : "class60",
+    "label" : {
+      "IRI-based" : "光频_设备工作状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_设备工作状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class11", "class160", "class29", "class31", "class148", "class76" ]
+  }, {
+    "id" : "class181",
+    "label" : {
+      "IRI-based" : "光频_透射峰电压监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_透射峰电压监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class58",
+    "label" : {
+      "IRI-based" : "光纤时间同步本地端设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步本地端设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class168", "class26", "class3", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class71",
+    "label" : {
+      "IRI-based" : "光频传递系统接收设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频传递系统接收设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频传递系统接收设备A1.33",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频传递系统接收设备A1.33"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://www.w3.org/ns/sosa/光频传递系统接收设备A1.28",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频传递系统接收设备A1.28"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class198", "class33", "class13", "class145", "class85", "class121", "class139", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class206",
+    "label" : {
+      "IRI-based" : "光频_EDFA锁定状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_EDFA锁定状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class14", "class37", "class32", "class114", "class191" ]
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "光频_遥测传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥测传感器",
+    "subClasses" : [ "class189", "class125", "class32", "class177", "class154", "class46", "class94", "class33", "class121", "class81", "class49", "class41" ],
+    "superClasses" : [ "class17" ],
+    "instances" : 0
+  }, {
+    "id" : "class44",
+    "label" : {
+      "IRI-based" : "相噪分析模块"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/相噪分析模块",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class69", "class150", "class100" ]
+  }, {
+    "id" : "class131",
+    "label" : {
+      "IRI-based" : "时间_电源状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_电源状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class20" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class149",
+    "label" : {
+      "IRI-based" : "时间_内部电路工作状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_内部电路工作状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class3", "class26", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class48",
+    "label" : {
+      "IRI-based" : "微波_频率差传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_频率差传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class102", "class118", "class142", "class135", "class21", "class147", "class192" ]
+  }, {
+    "id" : "class74",
+    "label" : {
+      "IRI-based" : "微波_设备运行状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_设备运行状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class10", "class205", "class146", "class123", "class156", "class50", "class147", "class173" ]
+  }, {
+    "id" : "class108",
+    "label" : {
+      "IRI-based" : "微波_信号频率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号频率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class78", "class163", "class78", "class163" ]
+  }, {
+    "id" : "class114",
+    "label" : {
+      "IRI-based" : "光频_EDFA锁定状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_EDFA锁定状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class206", "class35", "class98", "class14", "class37", "class32", "class191" ]
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "微波_链路锁定状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_链路锁定状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class82" ],
+    "instances" : 0,
+    "equivalent" : [ "class42", "class147" ]
+  }, {
+    "id" : "class193",
+    "label" : {
+      "IRI-based" : "时间_光输出波长传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光输出波长传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class27" ]
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "微波频率合成器发射和接收设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波频率合成器发射和接收设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class5", "class164", "class23", "class110", "class205", "class146", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class20",
+    "label" : {
+      "IRI-based" : "时间_遥信传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_遥信传感器",
+    "subClasses" : [ "class131", "class87" ],
+    "superClasses" : [ "class112" ],
+    "instances" : 0
+  }, {
+    "id" : "class166",
+    "label" : {
+      "IRI-based" : "参考腔稳频激光器净化单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/参考腔稳频激光器净化单元",
+    "superClasses" : [ "class203" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/参考腔稳频激光器净化单元A1.32",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/参考腔稳频激光器净化单元A1.32"
+      },
+      "annotations" : { }
+    } ]
+  }, {
+    "id" : "class138",
+    "label" : {
+      "IRI-based" : "光频_再生光输出功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光输出功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class98", "class206", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "微波累计量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波累计量",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class142",
+    "label" : {
+      "IRI-based" : "微波_频率差监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_频率差监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class120" ],
+    "instances" : 0,
+    "equivalent" : [ "class102", "class118", "class48", "class135", "class21", "class147", "class192" ]
+  }, {
+    "id" : "class189",
+    "label" : {
+      "IRI-based" : "光频_光频传递指标传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光频传递指标传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class91", "class41", "class84", "class29", "class202", "class16", "class61", "class76", "class94" ]
+  }, {
+    "id" : "class182",
+    "label" : {
+      "IRI-based" : "光频_发送端输出功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_发送端输出功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class148", "class65", "class128", "class98", "class35", "class206", "class32", "class14", "class37", "class191", "class114" ]
+  }, {
+    "id" : "class106",
+    "label" : {
+      "IRI-based" : "三级站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/三级站",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class79", "class24" ],
+    "superClasses" : [ "class196" ],
+    "instances" : 0
+  }, {
+    "id" : "class66",
+    "label" : {
+      "IRI-based" : "光频_再生光激光器锁定状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光激光器锁定状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class65", "class148", "class128", "class35", "class98", "class206", "class37", "class14", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class80",
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/Observation",
+    "comment" : {
+      "en" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class158", "class141", "class200" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0,
+    "equivalent" : [ "class45", "class196", "class40", "class51" ]
+  }, {
+    "id" : "class175",
+    "label" : {
+      "IRI-based" : "光频_光纤链路运行状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光纤链路运行状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class169" ],
+    "instances" : 0,
+    "equivalent" : [ "class38", "class57", "class57", "class38" ]
+  }, {
+    "id" : "class29",
+    "label" : {
+      "IRI-based" : "光频_相位噪声"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_相位噪声",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 0,
+    "equivalent" : [ "class11", "class41", "class84", "class16", "class61", "class76", "class91", "class60", "class189", "class202", "class148", "class94" ]
+  }, {
+    "id" : "class82",
+    "label" : {
+      "IRI-based" : "微波_遥信行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_遥信行为",
+    "subClasses" : [ "class6" ],
+    "superClasses" : [ "class200" ],
+    "instances" : 0
+  }, {
+    "id" : "class32",
+    "label" : {
+      "IRI-based" : "光频_发送端输出功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_发送端输出功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class182", "class199", "class148", "class65", "class128", "class98", "class35", "class206", "class14", "class37", "class191", "class114" ]
+  }, {
+    "id" : "class89",
+    "label" : {
+      "IRI-based" : "光频_遥信行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥信行为",
+    "subClasses" : [ "class114", "class25", "class37", "class171", "class31", "class83" ],
+    "superClasses" : [ "class158" ],
+    "instances" : 0
+  }, {
+    "id" : "class117",
+    "label" : {
+      "IRI-based" : "时间_源端设备编号监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_源端设备编号监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class97",
+    "label" : {
+      "IRI-based" : "时间开关量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间开关量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class180", "class26" ],
+    "superClasses" : [ "class109" ],
+    "instances" : 0
+  }, {
+    "id" : "class31",
+    "label" : {
+      "IRI-based" : "光频_设备工作状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_设备工作状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class60", "class160", "class60", "class160" ]
+  }, {
+    "id" : "class19",
+    "label" : {
+      "IRI-based" : "时间_光板卡编号传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光板卡编号传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class167", "class53", "class165", "class8", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class96",
+    "label" : {
+      "IRI-based" : "微波模拟量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波模拟量",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class102", "class78", "class1", "class69", "class74", "class146", "class164", "class118" ],
+    "superClasses" : [ "class15" ],
+    "instances" : 0
+  }, {
+    "id" : "class70",
+    "label" : {
+      "IRI-based" : "微波频率传递分系统设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波频率传递分系统设备",
+    "subClasses" : [ "class110", "class192", "class205", "class10", "class44", "class95" ],
+    "superClasses" : [ "class45" ],
+    "instances" : 0
+  }, {
+    "id" : "class109",
+    "label" : {
+      "IRI-based" : "光纤时间同步分系统属性"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤时间同步分系统属性",
+    "subClasses" : [ "class97", "class12", "class122", "class157" ],
+    "superClasses" : [ "class51" ],
+    "instances" : 0
+  }, {
+    "id" : "class133",
+    "label" : {
+      "IRI-based" : "一级站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/一级站",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class196" ],
+    "instances" : 0
+  }, {
+    "id" : "class162",
+    "label" : {
+      "IRI-based" : "光频_EDFA锁定状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_EDFA锁定状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class177", "class138", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class206", "class35", "class98", "class14", "class37", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class104",
+    "label" : {
+      "IRI-based" : "光频_输出功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输出功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class179" ],
+    "instances" : 0,
+    "equivalent" : [ "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class73",
+    "label" : {
+      "IRI-based" : "光频_环境温度"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_环境温度",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_环境温度A1.32",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_环境温度A1.32"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class111", "class39", "class49", "class63", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class52",
+    "label" : {
+      "IRI-based" : "光纤光频传递分系统属性"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤光频传递分系统属性",
+    "subClasses" : [ "class62", "class183", "class103", "class126" ],
+    "superClasses" : [ "class51" ],
+    "instances" : 0
+  }, {
+    "id" : "class158",
+    "label" : {
+      "IRI-based" : "光纤光频传递分系统监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤光频传递分系统监测行为",
+    "subClasses" : [ "class178", "class89", "class140", "class179" ],
+    "superClasses" : [ "class80" ],
+    "instances" : 0
+  }, {
+    "id" : "class87",
+    "label" : {
+      "IRI-based" : "时间_设备状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class20" ],
+    "instances" : 0,
+    "equivalent" : [ "class137", "class26" ]
+  }, {
+    "id" : "class119",
+    "label" : {
+      "IRI-based" : "信号再生净化设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/信号再生净化设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class161" ],
+    "instances" : 0,
+    "equivalent" : [ "class180", "class132" ]
+  }, {
+    "id" : "class124",
+    "label" : {
+      "IRI-based" : "时间_时间同步指标传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_时间同步指标传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class194", "class132", "class190", "class72", "class26", "class3", "class168", "class105", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "时间_输入功率监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输入功率监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class168", "class26", "class3", "class105", "class124", "class195", "class131", "class53", "class167", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class86",
+    "label" : {
+      "IRI-based" : "四级站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/四级站",
+    "subClasses" : [ "class75" ],
+    "superClasses" : [ "class196" ],
+    "instances" : 0
+  }, {
+    "id" : "class146",
+    "label" : {
+      "IRI-based" : "微波_输入功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_输入功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class50", "class5", "class164", "class23", "class110", "class10", "class205", "class123", "class156", "class50", "class147", "class173", "class74" ]
+  }, {
+    "id" : "class151",
+    "label" : {
+      "IRI-based" : "时间_累计传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_累计传感器",
+    "superClasses" : [ "class112" ],
+    "instances" : 0
+  }, {
+    "id" : "class79",
+    "label" : {
+      "IRI-based" : "普通站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/普通站",
+    "superClasses" : [ "class106" ],
+    "instances" : 0
+  }, {
+    "id" : "class169",
+    "label" : {
+      "IRI-based" : "光频_遥控传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_遥控传感器",
+    "subClasses" : [ "class175" ],
+    "superClasses" : [ "class17" ],
+    "instances" : 0
+  }, {
+    "id" : "class59",
+    "label" : {
+      "IRI-based" : "时间_源端设备编号"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_源端设备编号",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class76",
+    "label" : {
+      "IRI-based" : "光频_光频传递指标"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光频传递指标",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 0,
+    "equivalent" : [ "class11", "class41", "class84", "class16", "class61", "class91", "class60", "class189", "class29", "class202", "class148", "class94" ]
+  }, {
+    "id" : "class69",
+    "label" : {
+      "IRI-based" : "微波_相位噪声"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_相位噪声",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class100", "class150", "class44", "class100" ]
+  }, {
+    "id" : "class21",
+    "label" : {
+      "IRI-based" : "微波_信号功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class92" ],
+    "instances" : 0,
+    "equivalent" : [ "class102", "class118", "class48", "class142", "class135", "class147", "class192" ]
+  }, {
+    "id" : "class64",
+    "label" : {
+      "IRI-based" : "光频传递系统发送设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频传递系统发送设备",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频传递系统发送设备A1.31",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频传递系统发送设备A1.31"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://www.w3.org/ns/sosa/光频传递系统发送设备A1.30",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频传递系统发送设备A1.30"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class104", "class198", "class33", "class13", "class145", "class85", "class121", "class139", "class71", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class67",
+    "label" : {
+      "IRI-based" : "时间_电源状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_电源状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class93" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class152",
+    "label" : {
+      "IRI-based" : "时间_光无源组件编号传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光无源组件编号传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class195",
+    "label" : {
+      "IRI-based" : "时间_时间同步指标监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_时间同步指标监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class18" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class194", "class132", "class190", "class72", "class26", "class3", "class168", "class124", "class105", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class75",
+    "label" : {
+      "IRI-based" : "用户站"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/用户站",
+    "superClasses" : [ "class86" ],
+    "instances" : 0
+  }, {
+    "id" : "class101",
+    "label" : {
+      "IRI-based" : "光频_光源锁定状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光源锁定状态",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class62" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class77", "class170", "class81", "class73", "class111", "class39", "class49", "class63", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class63",
+    "label" : {
+      "IRI-based" : "参考腔稳频激光器单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/参考腔稳频激光器单元",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 0,
+    "equivalent" : [ "class85", "class153", "class174", "class148", "class73", "class101" ]
+  }, {
+    "id" : "class77",
+    "label" : {
+      "IRI-based" : "光频_光源锁定状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_光源锁定状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class107" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "光纤光频传递分系统传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光纤光频传递分系统传感器",
+    "subClasses" : [ "class130", "class107", "class169", "class4" ],
+    "superClasses" : [ "class40" ],
+    "instances" : 0
+  }, {
+    "id" : "class42",
+    "label" : {
+      "IRI-based" : "微波_链路锁定状态传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_链路锁定状态传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class34" ],
+    "instances" : 0,
+    "equivalent" : [ "class147", "class6", "class6", "class147" ]
+  }, {
+    "id" : "class53",
+    "label" : {
+      "IRI-based" : "时间_输入功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输入功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class168", "class26", "class3", "class105", "class124", "class195", "class131", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class81",
+    "label" : {
+      "IRI-based" : "光频_输出功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输出功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class104", "class33", "class198", "class13", "class145", "class85", "class139", "class121", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46", "class143" ]
+  }, {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "监控单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/监控单元",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class203" ],
+    "instances" : 1,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/监控单元A1.34",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/监控单元A1.34"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class91", "class60", "class29", "class148", "class76" ]
+  }, {
+    "id" : "class102",
+    "label" : {
+      "IRI-based" : "微波_信号功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_信号功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class118", "class48", "class142", "class135", "class21", "class147", "class192" ]
+  }, {
+    "id" : "class118",
+    "label" : {
+      "IRI-based" : "微波_频率差"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波_频率差",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class96" ],
+    "instances" : 0,
+    "equivalent" : [ "class48", "class102", "class48", "class142", "class135", "class21", "class147", "class192" ]
+  }, {
+    "id" : "class200",
+    "label" : {
+      "IRI-based" : "微波频率传递分系统监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/微波频率传递分系统监测行为",
+    "subClasses" : [ "class176", "class82", "class144", "class120" ],
+    "superClasses" : [ "class80" ],
+    "instances" : 0
+  }, {
+    "id" : "class167",
+    "label" : {
+      "IRI-based" : "时间_光板卡编号"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_光板卡编号",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class12" ],
+    "instances" : 0,
+    "equivalent" : [ "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class165", "class8", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class99", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "class196",
+    "label" : {
+      "IRI-based" : "Site"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/Site",
+    "attributes" : [ "equivalent" ],
+    "subClasses" : [ "class133", "class106", "class187", "class86" ],
+    "instances" : 0,
+    "equivalent" : [ "class45", "class45", "class40", "class80", "class51" ]
+  }, {
+    "id" : "class137",
+    "label" : {
+      "IRI-based" : "时间_设备状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_设备状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class93" ],
+    "instances" : 0,
+    "equivalent" : [ "class26", "class87", "class87", "class26" ]
+  }, {
+    "id" : "class143",
+    "label" : {
+      "IRI-based" : "光频_输入功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_输入功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 0,
+    "equivalent" : [ "class121", "class104", "class198", "class33", "class13", "class145", "class85", "class121", "class139", "class71", "class64", "class25", "class153", "class181", "class101", "class170", "class77", "class81", "class73", "class111", "class39", "class49", "class174", "class171", "class199", "class148", "class46" ]
+  }, {
+    "id" : "class94",
+    "label" : {
+      "IRI-based" : "光频_相位噪声传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_相位噪声传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class4" ],
+    "instances" : 0,
+    "equivalent" : [ "class29", "class84", "class91", "class189", "class41", "class84", "class29", "class202", "class16", "class61", "class76" ]
+  }, {
+    "id" : "class37",
+    "label" : {
+      "IRI-based" : "光频_再生光激光器锁定状态监测行为"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_再生光激光器锁定状态监测行为",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class89" ],
+    "instances" : 0,
+    "equivalent" : [ "class83", "class125", "class145", "class66", "class138", "class177", "class162", "class90", "class115", "class199", "class182", "class65", "class148", "class128", "class35", "class98", "class206", "class14", "class32", "class191", "class114" ]
+  }, {
+    "id" : "class95",
+    "label" : {
+      "IRI-based" : "频率基准源子系统单元"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/频率基准源子系统单元",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class70" ],
+    "instances" : 0,
+    "equivalent" : [ "class147", "class164" ]
+  }, {
+    "id" : "class98",
+    "label" : {
+      "IRI-based" : "光频_发送端输出功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/光频_发送端输出功率",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class183" ],
+    "instances" : 2,
+    "individuals" : [ {
+      "iri" : "http://www.w3.org/ns/sosa/光频_发送端输出功率A1.30",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_发送端输出功率A1.30"
+      },
+      "annotations" : { }
+    }, {
+      "iri" : "http://www.w3.org/ns/sosa/光频_发送端输出功率A1.31",
+      "labels" : {
+        "IRI-based" : "http://www.w3.org/ns/sosa/光频_发送端输出功率A1.31"
+      },
+      "annotations" : { }
+    } ],
+    "equivalent" : [ "class32", "class83", "class125", "class145", "class66", "class177", "class138", "class162", "class90", "class115", "class199", "class182", "class148", "class65", "class128", "class35", "class206", "class14", "class32", "class37", "class191", "class114" ]
+  }, {
+    "id" : "class99",
+    "label" : {
+      "IRI-based" : "时间_输出功率传感器"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间_输出功率传感器",
+    "attributes" : [ "equivalent" ],
+    "superClasses" : [ "class136" ],
+    "instances" : 0,
+    "equivalent" : [ "class190", "class127", "class19", "class55", "class132", "class194", "class190", "class72", "class26", "class3", "class168", "class105", "class124", "class195", "class131", "class53", "class167", "class8", "class165", "class7", "class152", "class149", "class59", "class117", "class172", "class180", "class36", "class201", "class186", "class134", "class67", "class58", "class43", "class113", "class204", "class127", "class155", "class9", "class47", "class193", "class27" ]
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  } ],
+  "datatype" : [ {
+    "id" : "literal2",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal4",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "literal13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal19",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype38",
+    "type" : "rdfs:Datatype"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "literal2",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal5",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal4",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "literal13",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype1",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal19",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype3",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype20",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype21",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype7",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype6",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype9",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype24",
+    "label" : {
+      "IRI-based" : "dateTime"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  }, {
+    "id" : "datatype8",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype25",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype22",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype23",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype28",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype29",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype26",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype27",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype31",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype10",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype32",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype30",
+    "label" : {
+      "IRI-based" : "int"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#int"
+  }, {
+    "id" : "datatype35",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype14",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype36",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype11",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype33",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype12",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype34",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype17",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype18",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype15",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  }, {
+    "id" : "datatype37",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype16",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype38",
+    "label" : {
+      "IRI-based" : "float"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#float"
+  } ],
+  "property" : [ {
+    "id" : "property226",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property185",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property232",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property188",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property206",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property227",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property225",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property229",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property245",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property171",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property170",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property216",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property214",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property211",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property247",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property220",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property205",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property230",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property148",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property149",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property153",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property154",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property151",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property152",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property155",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property16",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property156",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property150",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property228",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property139",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property137",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property138",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property235",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property142",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property143",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property140",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property141",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property146",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property147",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property144",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property145",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property237",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property128",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property126",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property131",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property132",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property135",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property207",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property133",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property134",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property217",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property203",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property212",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property118",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property115",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property243",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property210",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property242",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property236",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property223",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property238",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property101",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property246",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property239",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property240",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property234",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property204",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property241",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property250",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property88",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property87",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property224",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property83",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property86",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property90",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property251",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property92",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property244",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property95",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property94",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property208",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property222",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property249",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property218",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property61",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property233",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property70",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property221",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property77",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property248",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property213",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property43",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property40",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property42",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property41",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property58",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property55",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property209",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property56",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property51",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property192",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property226",
+    "label" : {
+      "IRI-based" : "设备"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备",
+    "domain" : "thing1",
+    "range" : "literal13",
+    "subproperty" : [ "property237", "property216", "property214", "property222", "property245", "property247", "property236", "property248", "property246", "property224", "property242" ]
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class14",
+    "range" : "class179"
+  }, {
+    "id" : "property186",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class140",
+    "range" : "class158"
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class61",
+    "range" : "class179"
+  }, {
+    "id" : "property29",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class58",
+    "range" : "class161"
+  }, {
+    "id" : "property187",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class179",
+    "range" : "class158"
+  }, {
+    "id" : "property4",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class115",
+    "range" : "class179"
+  }, {
+    "id" : "property184",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class178",
+    "range" : "class158"
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class182",
+    "range" : "class179"
+  }, {
+    "id" : "property185",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class89",
+    "range" : "class158"
+  }, {
+    "id" : "property26",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class191",
+    "range" : "class107"
+  }, {
+    "id" : "property25",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class160",
+    "range" : "class107"
+  }, {
+    "id" : "property232",
+    "label" : {
+      "IRI-based" : "站点"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点",
+    "domain" : "thing1",
+    "range" : "literal19",
+    "subproperty" : [ "property218", "property225", "property230", "property223", "property244" ]
+  }, {
+    "id" : "property28",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class119",
+    "range" : "class161"
+  }, {
+    "id" : "property188",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class75",
+    "range" : "class86"
+  }, {
+    "id" : "property27",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class47",
+    "range" : "class161"
+  }, {
+    "id" : "property189",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class175",
+    "range" : "class169"
+  }, {
+    "id" : "property22",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class77",
+    "range" : "class107"
+  }, {
+    "id" : "property21",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class206",
+    "range" : "class107"
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class13",
+    "range" : "class107"
+  }, {
+    "id" : "property23",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class66",
+    "range" : "class107"
+  }, {
+    "id" : "property182",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class103",
+    "range" : "class52"
+  }, {
+    "id" : "property183",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class126",
+    "range" : "class52"
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class28",
+    "range" : "class15"
+  }, {
+    "id" : "property180",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class62",
+    "range" : "class52"
+  }, {
+    "id" : "property181",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class183",
+    "range" : "class52"
+  }, {
+    "id" : "property206",
+    "label" : {
+      "IRI-based" : "hasFeatureOfInterest",
+      "en" : "has feature of interest"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+    "comment" : {
+      "en" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A relation between an Observation and the entity whose quality was observed, or between an Actuation and the entity whose property was modified, or between an act of Sampling and the entity that was sampled.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For example, in an Observation of the weight of a person, the FeatureOfInterest is the person and the property is its weight.",
+        "type" : "label"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property209"
+  }, {
+    "id" : "property227",
+    "label" : {
+      "IRI-based" : "遥控值"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/遥控值",
+    "domain" : "thing1",
+    "range" : "datatype14",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property225",
+    "label" : {
+      "IRI-based" : "站点位置"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点位置",
+    "domain" : "thing1",
+    "range" : "datatype12",
+    "superproperty" : [ "property232" ]
+  }, {
+    "id" : "property229",
+    "label" : {
+      "IRI-based" : "告警状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/告警状态",
+    "domain" : "thing1",
+    "range" : "datatype16",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property175",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class95",
+    "range" : "class70"
+  }, {
+    "id" : "property176",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class97",
+    "range" : "class109"
+  }, {
+    "id" : "property173",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class10",
+    "range" : "class70"
+  }, {
+    "id" : "property174",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class44",
+    "range" : "class70"
+  }, {
+    "id" : "property37",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class108",
+    "range" : "class120"
+  }, {
+    "id" : "property179",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class157",
+    "range" : "class109"
+  }, {
+    "id" : "property36",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class135",
+    "range" : "class120"
+  }, {
+    "id" : "property39",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class150",
+    "range" : "class120"
+  }, {
+    "id" : "property177",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class12",
+    "range" : "class109"
+  }, {
+    "id" : "property245",
+    "label" : {
+      "IRI-based" : "设备ID"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备ID",
+    "domain" : "thing1",
+    "range" : "datatype32",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property38",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class22",
+    "range" : "class120"
+  }, {
+    "id" : "property178",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class122",
+    "range" : "class109"
+  }, {
+    "id" : "property33",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class134",
+    "range" : "class161"
+  }, {
+    "id" : "property32",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class105",
+    "range" : "class161"
+  }, {
+    "id" : "property35",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class9",
+    "range" : "class161"
+  }, {
+    "id" : "property34",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class172",
+    "range" : "class161"
+  }, {
+    "id" : "property219",
+    "label" : {
+      "IRI-based" : "封锁状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/封锁状态",
+    "domain" : "thing1",
+    "range" : "datatype6",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property171",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class192",
+    "range" : "class70"
+  }, {
+    "id" : "property172",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class205",
+    "range" : "class70"
+  }, {
+    "id" : "property31",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class55",
+    "range" : "class161"
+  }, {
+    "id" : "property30",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class186",
+    "range" : "class161"
+  }, {
+    "id" : "property170",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class110",
+    "range" : "class70"
+  }, {
+    "id" : "property216",
+    "label" : {
+      "IRI-based" : "工作电压"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/工作电压",
+    "domain" : "thing1",
+    "range" : "datatype3",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property214",
+    "label" : {
+      "IRI-based" : "待机功率"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/待机功率",
+    "domain" : "thing1",
+    "range" : "datatype1",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property211",
+    "label" : {
+      "IRI-based" : "connect"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/connect",
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property159",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class83",
+    "range" : "class89"
+  }, {
+    "id" : "property247",
+    "label" : {
+      "IRI-based" : "设备名称"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备名称",
+    "domain" : "thing1",
+    "range" : "datatype34",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property164",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class1",
+    "range" : "class96"
+  }, {
+    "id" : "property165",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class69",
+    "range" : "class96"
+  }, {
+    "id" : "property162",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class102",
+    "range" : "class96"
+  }, {
+    "id" : "property163",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class78",
+    "range" : "class96"
+  }, {
+    "id" : "property168",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class164",
+    "range" : "class96"
+  }, {
+    "id" : "property169",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class118",
+    "range" : "class96"
+  }, {
+    "id" : "property166",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class74",
+    "range" : "class96"
+  }, {
+    "id" : "property167",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class146",
+    "range" : "class96"
+  }, {
+    "id" : "property160",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class180",
+    "range" : "class97"
+  }, {
+    "id" : "property220",
+    "label" : {
+      "IRI-based" : "资源类型"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/资源类型",
+    "domain" : "thing1",
+    "range" : "datatype7",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property161",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class26",
+    "range" : "class97"
+  }, {
+    "id" : "property205",
+    "label" : {
+      "IRI-based" : "madeBySensor",
+      "en" : "made by sensor"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/madeBySensor",
+    "comment" : {
+      "en" : "Relation between an Observation and the Sensor which made the Observation."
+    },
+    "attributes" : [ "transitive" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between an Observation and the Sensor which made the Observation.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property207"
+  }, {
+    "id" : "property230",
+    "label" : {
+      "IRI-based" : "站点名称"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点名称",
+    "domain" : "thing1",
+    "range" : "datatype17",
+    "superproperty" : [ "property232" ]
+  }, {
+    "id" : "property148",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class79",
+    "range" : "class106"
+  }, {
+    "id" : "property149",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class24",
+    "range" : "class106"
+  }, {
+    "id" : "property19",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class2",
+    "range" : "class15"
+  }, {
+    "id" : "property153",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class6",
+    "range" : "class82"
+  }, {
+    "id" : "property18",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class96",
+    "range" : "class15"
+  }, {
+    "id" : "property154",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class114",
+    "range" : "class89"
+  }, {
+    "id" : "property151",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class141",
+    "range" : "class80"
+  }, {
+    "id" : "property152",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class200",
+    "range" : "class80"
+  }, {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class54",
+    "range" : "class141"
+  }, {
+    "id" : "property157",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class171",
+    "range" : "class89"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class93",
+    "range" : "class141"
+  }, {
+    "id" : "property158",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class31",
+    "range" : "class89"
+  }, {
+    "id" : "property17",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class159",
+    "range" : "class15"
+  }, {
+    "id" : "property155",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class25",
+    "range" : "class89"
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class18",
+    "range" : "class141"
+  }, {
+    "id" : "property156",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class37",
+    "range" : "class89"
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class181",
+    "range" : "class179"
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class104",
+    "range" : "class179"
+  }, {
+    "id" : "property13",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class185",
+    "range" : "class141"
+  }, {
+    "id" : "property12",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class202",
+    "range" : "class179"
+  }, {
+    "id" : "property150",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class158",
+    "range" : "class80"
+  }, {
+    "id" : "property228",
+    "label" : {
+      "IRI-based" : "上限"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/上限",
+    "domain" : "thing1",
+    "range" : "datatype15",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property231",
+    "label" : {
+      "IRI-based" : "基值"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/基值",
+    "domain" : "thing1",
+    "range" : "datatype18",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property139",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class46",
+    "range" : "class4"
+  }, {
+    "id" : "property137",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class177",
+    "range" : "class4"
+  }, {
+    "id" : "property138",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class154",
+    "range" : "class4"
+  }, {
+    "id" : "property235",
+    "label" : {
+      "IRI-based" : "偏移"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/偏移",
+    "domain" : "thing1",
+    "range" : "datatype22",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property142",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class121",
+    "range" : "class4"
+  }, {
+    "id" : "property143",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class81",
+    "range" : "class4"
+  }, {
+    "id" : "property140",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class94",
+    "range" : "class4"
+  }, {
+    "id" : "property141",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class33",
+    "range" : "class4"
+  }, {
+    "id" : "property146",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class131",
+    "range" : "class20"
+  }, {
+    "id" : "property147",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class87",
+    "range" : "class20"
+  }, {
+    "id" : "property144",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class49",
+    "range" : "class4"
+  }, {
+    "id" : "property145",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class41",
+    "range" : "class4"
+  }, {
+    "id" : "property237",
+    "label" : {
+      "IRI-based" : "安装日期"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/安装日期",
+    "domain" : "thing1",
+    "range" : "datatype24",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property128",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class195",
+    "range" : "class18"
+  }, {
+    "id" : "property129",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class117",
+    "range" : "class18"
+  }, {
+    "id" : "property126",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class204",
+    "range" : "class18"
+  }, {
+    "id" : "property127",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class3",
+    "range" : "class18"
+  }, {
+    "id" : "property131",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class8",
+    "range" : "class18"
+  }, {
+    "id" : "property132",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class127",
+    "range" : "class18"
+  }, {
+    "id" : "property130",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class72",
+    "range" : "class18"
+  }, {
+    "id" : "property135",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class125",
+    "range" : "class4"
+  }, {
+    "id" : "property207",
+    "label" : {
+      "IRI-based" : "madeObservation",
+      "en" : "made observation"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
+    "comment" : {
+      "en" : "Relation between a Sensor and an Observation made by the Sensor."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property205"
+  }, {
+    "id" : "property136",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class32",
+    "range" : "class4"
+  }, {
+    "id" : "property133",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class30",
+    "range" : "class18"
+  }, {
+    "id" : "property134",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class189",
+    "range" : "class4"
+  }, {
+    "id" : "property217",
+    "label" : {
+      "IRI-based" : "监测变量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/监测变量",
+    "domain" : "thing1",
+    "range" : "literal4",
+    "subproperty" : [ "property221", "property228", "property241", "property251", "property235", "property229", "property231", "property219", "property215", "property238", "property249", "property234", "property243", "property239", "property233", "property250", "property240", "property220", "property227" ]
+  }, {
+    "id" : "property203",
+    "label" : {
+      "IRI-based" : "is_property_of"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/is_property_of",
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property212"
+  }, {
+    "id" : "property212",
+    "label" : {
+      "IRI-based" : "has_property"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/has_property",
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property203"
+  }, {
+    "id" : "property117",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class70",
+    "range" : "class45"
+  }, {
+    "id" : "property118",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class162",
+    "range" : "class62"
+  }, {
+    "id" : "property115",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class203",
+    "range" : "class45"
+  }, {
+    "id" : "property116",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class161",
+    "range" : "class45"
+  }, {
+    "id" : "property243",
+    "label" : {
+      "IRI-based" : "累计量"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/累计量",
+    "domain" : "thing1",
+    "range" : "datatype30",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property119",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class101",
+    "range" : "class62"
+  }, {
+    "id" : "property210",
+    "label" : {
+      "IRI-based" : "observedProperty",
+      "en" : "observed property"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/observedProperty",
+    "comment" : {
+      "en" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation linking an Observation to the property that was observed. The ObservableProperty should be a property of the FeatureOfInterest (linked by hasFeatureOfInterest) of this Observation.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/ObservableProperty",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1"
+  }, {
+    "id" : "property120",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class65",
+    "range" : "class62"
+  }, {
+    "id" : "property121",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class148",
+    "range" : "class62"
+  }, {
+    "id" : "property124",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class27",
+    "range" : "class18"
+  }, {
+    "id" : "property125",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class165",
+    "range" : "class18"
+  }, {
+    "id" : "property122",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class60",
+    "range" : "class62"
+  }, {
+    "id" : "property123",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class199",
+    "range" : "class62"
+  }, {
+    "id" : "property242",
+    "label" : {
+      "IRI-based" : "负责人"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/负责人",
+    "domain" : "thing1",
+    "range" : "datatype29",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property202",
+    "label" : {
+      "IRI-based" : "haslocated"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/haslocated",
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property208"
+  }, {
+    "id" : "property236",
+    "label" : {
+      "IRI-based" : "设备接口"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备接口",
+    "domain" : "thing1",
+    "range" : "datatype23",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property106",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class173",
+    "range" : "class92"
+  }, {
+    "id" : "property107",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class50",
+    "range" : "class92"
+  }, {
+    "id" : "property104",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class188",
+    "range" : "class92"
+  }, {
+    "id" : "property105",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class100",
+    "range" : "class92"
+  }, {
+    "id" : "property223",
+    "label" : {
+      "IRI-based" : "站点描述"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点描述",
+    "domain" : "thing1",
+    "range" : "datatype10",
+    "superproperty" : [ "property232" ]
+  }, {
+    "id" : "property108",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class5",
+    "range" : "class92"
+  }, {
+    "id" : "property109",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class48",
+    "range" : "class92"
+  }, {
+    "id" : "property110",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class151",
+    "range" : "class112"
+  }, {
+    "id" : "property113",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class136",
+    "range" : "class112"
+  }, {
+    "id" : "property114",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class147",
+    "range" : "class159"
+  }, {
+    "id" : "property111",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class20",
+    "range" : "class112"
+  }, {
+    "id" : "property112",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class68",
+    "range" : "class112"
+  }, {
+    "id" : "property238",
+    "label" : {
+      "IRI-based" : "状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/状态",
+    "domain" : "thing1",
+    "range" : "datatype25",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property102",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class21",
+    "range" : "class92"
+  }, {
+    "id" : "property103",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class163",
+    "range" : "class92"
+  }, {
+    "id" : "property100",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class116",
+    "range" : "class129"
+  }, {
+    "id" : "property101",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class92",
+    "range" : "class129"
+  }, {
+    "id" : "property215",
+    "label" : {
+      "IRI-based" : "时间戳"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/时间戳",
+    "domain" : "thing1",
+    "range" : "literal2",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property246",
+    "label" : {
+      "IRI-based" : "设备状态"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备状态",
+    "domain" : "thing1",
+    "range" : "datatype33",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property239",
+    "label" : {
+      "IRI-based" : "资源ID"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/资源ID",
+    "domain" : "thing1",
+    "range" : "datatype26",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property240",
+    "label" : {
+      "IRI-based" : "资源类别"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/资源类别",
+    "domain" : "thing1",
+    "range" : "datatype27",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property234",
+    "label" : {
+      "IRI-based" : "系数"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/系数",
+    "domain" : "thing1",
+    "range" : "datatype21",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property80",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class201",
+    "range" : "class136"
+  }, {
+    "id" : "property82",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class168",
+    "range" : "class136"
+  }, {
+    "id" : "property81",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class7",
+    "range" : "class136"
+  }, {
+    "id" : "property204",
+    "label" : {
+      "IRI-based" : "isObservedBy",
+      "en" : "is observed by"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/isObservedBy",
+    "comment" : {
+      "en" : "Relation between an ObservableProperty and the Sensor able to observe it."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between an ObservableProperty and the Sensor able to observe it.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/ObservableProperty",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property213"
+  }, {
+    "id" : "property241",
+    "label" : {
+      "IRI-based" : "下下限"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/下下限",
+    "domain" : "thing1",
+    "range" : "datatype28",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property250",
+    "label" : {
+      "IRI-based" : "资源名称"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/资源名称",
+    "domain" : "thing1",
+    "range" : "datatype37",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property201",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class86",
+    "range" : "class196"
+  }, {
+    "id" : "property200",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class187",
+    "range" : "class196"
+  }, {
+    "id" : "property88",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class98",
+    "range" : "class183"
+  }, {
+    "id" : "property87",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class138",
+    "range" : "class183"
+  }, {
+    "id" : "property89",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class35",
+    "range" : "class183"
+  }, {
+    "id" : "property84",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class197",
+    "range" : "class136"
+  }, {
+    "id" : "property224",
+    "label" : {
+      "IRI-based" : "设备类型"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备类型",
+    "domain" : "thing1",
+    "range" : "datatype11",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property83",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class99",
+    "range" : "class136"
+  }, {
+    "id" : "property86",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class76",
+    "range" : "class183"
+  }, {
+    "id" : "property85",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class42",
+    "range" : "class34"
+  }, {
+    "id" : "property91",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class73",
+    "range" : "class183"
+  }, {
+    "id" : "property90",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class145",
+    "range" : "class183"
+  }, {
+    "id" : "property251",
+    "label" : {
+      "IRI-based" : "下限"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/下限",
+    "domain" : "thing1",
+    "range" : "datatype38",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property93",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class174",
+    "range" : "class183"
+  }, {
+    "id" : "property92",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class29",
+    "range" : "class183"
+  }, {
+    "id" : "property244",
+    "label" : {
+      "IRI-based" : "站点级别"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点级别",
+    "domain" : "thing1",
+    "range" : "datatype31",
+    "superproperty" : [ "property232" ]
+  }, {
+    "id" : "property99",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class34",
+    "range" : "class129"
+  }, {
+    "id" : "property98",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class184",
+    "range" : "class129"
+  }, {
+    "id" : "property95",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class153",
+    "range" : "class183"
+  }, {
+    "id" : "property94",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class143",
+    "range" : "class183"
+  }, {
+    "id" : "property97",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class91",
+    "range" : "class183"
+  }, {
+    "id" : "property96",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class85",
+    "range" : "class183"
+  }, {
+    "id" : "property60",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class63",
+    "range" : "class203"
+  }, {
+    "id" : "property208",
+    "label" : {
+      "IRI-based" : "locate"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/locate",
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property202"
+  }, {
+    "id" : "property222",
+    "label" : {
+      "IRI-based" : "生产商"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/生产商",
+    "domain" : "thing1",
+    "range" : "datatype9",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property69",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class194",
+    "range" : "class12"
+  }, {
+    "id" : "property66",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class167",
+    "range" : "class12"
+  }, {
+    "id" : "property65",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class43",
+    "range" : "class12"
+  }, {
+    "id" : "property249",
+    "label" : {
+      "IRI-based" : "监测值"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/监测值",
+    "domain" : "thing1",
+    "range" : "datatype36",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property68",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class132",
+    "range" : "class12"
+  }, {
+    "id" : "property218",
+    "label" : {
+      "IRI-based" : "站点ID"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/站点ID",
+    "domain" : "thing1",
+    "range" : "literal5",
+    "superproperty" : [ "property232" ]
+  }, {
+    "id" : "property67",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class36",
+    "range" : "class12"
+  }, {
+    "id" : "property62",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class16",
+    "range" : "class203"
+  }, {
+    "id" : "property61",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class198",
+    "range" : "class203"
+  }, {
+    "id" : "property64",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class57",
+    "range" : "class140"
+  }, {
+    "id" : "property63",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class11",
+    "range" : "class203"
+  }, {
+    "id" : "property233",
+    "label" : {
+      "IRI-based" : "资源单位"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/资源单位",
+    "domain" : "thing1",
+    "range" : "datatype20",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property71",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class155",
+    "range" : "class12"
+  }, {
+    "id" : "property70",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class59",
+    "range" : "class12"
+  }, {
+    "id" : "property221",
+    "label" : {
+      "IRI-based" : "上上限"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/上上限",
+    "domain" : "thing1",
+    "range" : "datatype8",
+    "superproperty" : [ "property217" ]
+  }, {
+    "id" : "property77",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class193",
+    "range" : "class136"
+  }, {
+    "id" : "property76",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class19",
+    "range" : "class136"
+  }, {
+    "id" : "property79",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class124",
+    "range" : "class136"
+  }, {
+    "id" : "property78",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class149",
+    "range" : "class136"
+  }, {
+    "id" : "property73",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class190",
+    "range" : "class12"
+  }, {
+    "id" : "property72",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class53",
+    "range" : "class12"
+  }, {
+    "id" : "property75",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class152",
+    "range" : "class136"
+  }, {
+    "id" : "property74",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class113",
+    "range" : "class12"
+  }, {
+    "id" : "property248",
+    "label" : {
+      "IRI-based" : "设备描述"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/设备描述",
+    "domain" : "thing1",
+    "range" : "datatype35",
+    "superproperty" : [ "property226" ]
+  }, {
+    "id" : "property48",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class67",
+    "range" : "class93"
+  }, {
+    "id" : "property47",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class15",
+    "range" : "class51"
+  }, {
+    "id" : "property213",
+    "label" : {
+      "IRI-based" : "observes",
+      "en" : "observes"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/observes",
+    "comment" : {
+      "en" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between a Sensor and an ObservableProperty that it is capable of sensing.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/ObservableProperty",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property204"
+  }, {
+    "id" : "property49",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class137",
+    "range" : "class93"
+  }, {
+    "id" : "property44",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class38",
+    "range" : "class126"
+  }, {
+    "id" : "property43",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class142",
+    "range" : "class120"
+  }, {
+    "id" : "property46",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class109",
+    "range" : "class51"
+  }, {
+    "id" : "property45",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class52",
+    "range" : "class51"
+  }, {
+    "id" : "property40",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class156",
+    "range" : "class120"
+  }, {
+    "id" : "property42",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class23",
+    "range" : "class120"
+  }, {
+    "id" : "property41",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class123",
+    "range" : "class120"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class39",
+    "range" : "class179"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class111",
+    "range" : "class179"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class88",
+    "range" : "class179"
+  }, {
+    "id" : "property8",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class170",
+    "range" : "class179"
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class84",
+    "range" : "class179"
+  }, {
+    "id" : "property197",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class120",
+    "range" : "class200"
+  }, {
+    "id" : "property198",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class133",
+    "range" : "class196"
+  }, {
+    "id" : "property195",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class82",
+    "range" : "class200"
+  }, {
+    "id" : "property196",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class144",
+    "range" : "class200"
+  }, {
+    "id" : "property59",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class166",
+    "range" : "class203"
+  }, {
+    "id" : "property58",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class128",
+    "range" : "class203"
+  }, {
+    "id" : "property199",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class106",
+    "range" : "class196"
+  }, {
+    "id" : "property55",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class64",
+    "range" : "class203"
+  }, {
+    "id" : "property54",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class139",
+    "range" : "class203"
+  }, {
+    "id" : "property190",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class130",
+    "range" : "class17"
+  }, {
+    "id" : "property57",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class56",
+    "range" : "class203"
+  }, {
+    "id" : "property209",
+    "label" : {
+      "IRI-based" : "isFeatureOfInterestOf",
+      "en" : "is feature of interest of"
+    },
+    "iri" : "http://www.w3.org/ns/sosa/isFeatureOfInterestOf",
+    "comment" : {
+      "en" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it."
+    },
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A relation between a FeatureOfInterest and an Observation about it, an Actuation acting on it, or an act of Sampling that sampled it.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/FeatureOfInterest",
+        "type" : "iri"
+      } ]
+    },
+    "domain" : "thing1",
+    "range" : "thing1",
+    "inverse" : "property206"
+  }, {
+    "id" : "property56",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class71",
+    "range" : "class203"
+  }, {
+    "id" : "property51",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class112",
+    "range" : "class40"
+  }, {
+    "id" : "property193",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class4",
+    "range" : "class17"
+  }, {
+    "id" : "property50",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class40"
+  }, {
+    "id" : "property194",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class176",
+    "range" : "class200"
+  }, {
+    "id" : "property53",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class90",
+    "range" : "class203"
+  }, {
+    "id" : "property191",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class107",
+    "range" : "class17"
+  }, {
+    "id" : "property52",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class129",
+    "range" : "class40"
+  }, {
+    "id" : "property192",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class169",
+    "range" : "class17"
+  } ]
+}

@@ -7,7 +7,7 @@
 var running = false;
 var mGraph;
 var mRootCell;
-var site_name = "xian";
+var site_name ;
 var editorui1;
 var alarmImg="roundImage;image=images/alarm16.png";
 var alarmCells=new Set();
@@ -19,6 +19,7 @@ function getTime() {
 }
 
 function InitSiteName(cell) {
+
     if (cell == null) {
         return;
     }
@@ -26,7 +27,7 @@ function InitSiteName(cell) {
         site_name = cell.getValue();
         site_name = site_name.substr(0, site_name.length - 5);
         console.log("InitSiteName   site_name：  " + site_name);
-        site_name = "xian";
+        return;
     }
     for (var i = 0; i < cell.getChildCount(); i++) {
         var child = cell.getChildAt(i);
@@ -87,7 +88,7 @@ function collectMonitorInfo(cell, monitorInfoSet) {
         site_name = cell.getValue();
         site_name = site_name.substr(0, site_name.length - 5);
         console.log("collectMonitorInfo  site_name：  " + site_name);
-        site_name = "xian";
+        //site_name = "xian";
     }
 
     if (cell.isVertex() && cell.getattr() == "property_data") {
@@ -389,6 +390,8 @@ Actions.prototype.init = function () {
 
     //王伟的修改监控值业务
     this.addAction("EditDetectedValue", function () {
+        mGraph = graph;
+        mRootCell = mGraph.model.root;
         InitSiteName(mRootCell);
         let selectedCell = graph.getSelectionCell();
         let params = {
@@ -1167,7 +1170,7 @@ Actions.prototype.init = function () {
         alert('stop');
     }, null, null, null));
 
-    this.put('opener', new Action('opener', function () {
+/*    this.put('opener', new Action('opener', function () {
             var filename="zhaoyi";
             var filepath="C:\\Users\\ASUS\\Desktop\\zheng.service";
             //把filepath里面的内容转换为xml格式
@@ -1197,7 +1200,7 @@ Actions.prototype.init = function () {
                 mxUtils.alert(mxResources.get('invalidOrMissingFile') + ': ' + e.message);
             }
         },
-        null, null, null));
+        null, null, null));*/
 
     // Font style actions
     var toggleFontStyle = mxUtils.bind(this, function (key, style, fn, shortcut) {
@@ -1405,10 +1408,7 @@ Actions.prototype.init = function () {
         mRootCell = mGraph.model.root;
         InitSiteName(mRootCell);
         let selectedCell = graph.getSelectionCell();
-        //弹出命令选择框
-        // jSelect('请选择:',{'1':'张三','2':'李四'}, '人物', function(inputdata) {
-        //    alert(inputdata);
-        // });
+
     }, null, null, null);
 
     this.addAction('clearDefaultStyle', function () {

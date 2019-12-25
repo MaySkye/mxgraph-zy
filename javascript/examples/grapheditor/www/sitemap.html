@@ -469,7 +469,7 @@
             createLevel(siteData,map, 1, 'red');
             createLevel(siteData,map, 2, 'blue');
             createLevel(siteData,map, 3, 'green');
-            //createLine(siteData,siteLineData,map);
+            createLine(siteData,siteLineData,map);
         }
     }
 
@@ -609,6 +609,9 @@
         // map.openInfoWindow(infoWindow, point); // 开启信息窗口
     }
 
+    let point1 = new BMap.Point();
+    let point2 = new BMap.Point();
+    let line = [];
     // 创建连线
     function createLine(siteData,siteLineData,map) {
         let siteArray = JSON.parse(siteData);
@@ -623,9 +626,9 @@
         for(let i=0;i<lineArray.length;i++){
             console.log("point1:"  + lineArray[i]["point1"]);
             console.log("point2:"  + lineArray[i]["point2"]);
-            let point1=hashmap.get(lineArray[i]["point1"]);
-            let point2=hashmap.get(lineArray[i]["point2"]);
-            let line = [point1,point2];
+            point1=hashmap.get(lineArray[i]["point1"]);
+            point2=hashmap.get(lineArray[i]["point2"]);
+            line = [point1,point2];
             addLine(map, line);
             console.log("success" );
         }
@@ -635,14 +638,15 @@
         // 创建弧线对象
         //  const curve = new BMapLib.CurveLine(line, { strokeColor: '#000000', strokeWeight: 3, strokeOpacity: 0.5 });
         // @ts-ignore
-        const sy = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
+      /*  const sy = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
             scale: 0.6, // 图标缩放大小
             strokeColor: '#fff', // 设置矢量图标的线填充颜色
             strokeWeight: '1', // 设置线宽
         });
-        const icons = new BMap.IconSequence(sy, '10', '30');
+        const icons = new BMap.IconSequence(sy, '10', '30');*/
         // 创建折线
-        let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5, icons: [icons] });
+        //let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5, icons: [icons] });
+        let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5 });
         map.addOverlay(polyline);
 
         // setTimeout(polyline.setStrokeColor('red'), 5000);

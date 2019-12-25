@@ -475,7 +475,7 @@ Menus.prototype.init = function()
 	})));
     this.put('run', new Menu(mxUtils.bind(this, function(menu, parent)
     {
-        this.addMenuItems(menu, ['start', '-', 'stop',"-",'opener'], parent);
+        this.addMenuItems(menu, ['start', '-', 'stop'], parent);
     })));
 	this.put('help', new Menu(mxUtils.bind(this, function(menu, parent)
 	{

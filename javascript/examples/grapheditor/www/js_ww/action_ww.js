@@ -73,7 +73,7 @@ const WW = {
             site_name: params.site_name,
             device_name: params.deviceId
         });
-
+        console.log("originalDetectedValue:"+originalDetectedValue);
 
         //step3：获取属性单位
         this.getAllPropertyUnits(params.mRootCell);
@@ -81,6 +81,7 @@ const WW = {
 
         //step4：动态生成的行html
         let columnHtml = "";
+        console.log("propertiesList.length:"+propertiesList.length);
         for (let i = 0; i < propertiesList.length; i++) {
             columnHtml +=
                 '<tr>' +
