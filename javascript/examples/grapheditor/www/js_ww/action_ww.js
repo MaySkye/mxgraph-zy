@@ -40,7 +40,7 @@ const WW = {
                 '        <div class="ww-dialog-body">' +
                 params.content +
                 '        </div>' +
-                '        <div class="ww-dialog-btnGroup">' +
+                '        <div class="ww-mini-dialog-btnGroup">' +
                 '            <button type="button" class="ww-btn ww-btn-gray ww-btn-sm" id="mini-btn-closeDialog" onclick="WW.hideMiniDialog();">关闭</button>' +
                 '        </div>' +
                 '    </div>' +
@@ -151,6 +151,7 @@ const WW = {
                         WW.hideEditDetectedValueDialog();
                         WW.showMiniDialog({
                             title: "提交成功",
+                            type:"success",
                             content: "修改检测值成功！"
                         });
                     } else {
