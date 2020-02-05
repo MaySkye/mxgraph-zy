@@ -55,6 +55,45 @@ const WW = {
         $("#mini-app").fadeOut(duration);
         setTimeout('$("#mini-app").remove();', duration);
     },
+    showSendCommandDialog:function(params) {
+        //防止重叠
+        $("#command-app").remove();
+        let doShowSendCommandDialog = function () {
+            $("body").append(
+                //赵艺的模态框区域
+                '<div id="command-app">' +
+                //蒙层
+                '    <div class="ww-dialog-mask" id="ww-command-dialog-mask" onclick="WW.hideSendCommandDialog();"></div>' +
+                //模态框窗体
+
+                '    <div class="ww-dialog" id="ww-command-dialog">' +
+                '        <div class="ww-dialog-title">发送命令</div>'+
+                '        <div class="ww-dialog-body">' +
+                '            <form class="edit-form">'+
+                '              <div class="input-group">'+
+                '                 <span class="input-group-addon">command:</span>'+
+                '                 <input type="text" class="form-control" id="sitename" placeholder="比如：北京">'+
+                '              </div>'+
+                '              <br>'+
+                '            </form>'+
+                '        </div>' +
+                '        <div class="ww-dialog-btnGroup">' +
+                '            <button type="button" class="ww-btn ww-btn-gray ww-btn-sm" id="btn-send" onclick="WW.hideSendCommandDialog();">确定</button>' +
+                '            <button type="button" class="ww-btn ww-btn-gray ww-btn-sm" id="btn-close" onclick="WW.hideSendCommandDialog();">取消</button>' +
+                '        </div>' +
+                '    </div>' +
+
+                '</div>');
+            $("#command-app").fadeIn(WW.config.animation.DialogfadeInDuration);
+        }
+        setTimeout(doShowSendCommandDialog, params == null || params.delay == null ? WW.config.animation.DialogfadeOutDuration + WW.config.animation.interval : params.delay);
+    },
+    hideSendCommandDialog: function (params) {
+        let duration = params == null || params.duration == null ? WW.config.animation.DialogfadeOutDuration : params.duration;
+        $("#command-app").fadeOut(duration);
+        setTimeout('$("#command-app").remove();', duration);
+    },
+
     showEditDetectedValueDialog: function (params) {
         //防止重叠
         $("#app").remove();
@@ -85,7 +124,7 @@ const WW = {
         for (let i = 0; i < propertiesList.length; i++) {
             columnHtml +=
                 '<tr>' +
-                '   <th class="ww-col-7">' + propertiesList[i].substring(0, propertiesList[i].length - 5) + '</th>' +
+                '   <th class="ww-col-7">' + propertiesList[i].substring(0, propertiesList[i].length) + '</th>' +
                 '   <td class="ww-col-5">' +
                 '       <input type="number" name="' + propertiesList[i] + '" value="' + (originalDetectedValue[propertiesList[i]] == null ? '0' : originalDetectedValue[propertiesList[i]]) + '">' +
                 '   </td>' +
@@ -105,7 +144,7 @@ const WW = {
             '            <form id="edit-form">' +
             '                <table class="ww-dialog-table">' +
             '                    <tr>' +
-            '                        <th colspan="3">' + params.deviceId.substring(0, params.deviceId.length - 5) + '</th>' +
+            '                        <th colspan="3">' + params.deviceId.substring(0, params.deviceId.length) + '</th>' +
             '                    </tr>' +
             columnHtml +
             '                </table>' +

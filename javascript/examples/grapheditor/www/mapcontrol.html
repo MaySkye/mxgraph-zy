@@ -20,6 +20,7 @@
         position: absolute;
         z-index: 1;
     }
+    .BMap_cpyCtrl {display:none;}
     #controlData {
         width: 30%;
         height: 100%;
@@ -43,6 +44,7 @@
             <th>稳定度</th>
             <th>传输速率</th>
             <th>工作状态</th>
+            <th>操作</th>
         </tr>
         </thead>
         <tbody id="lines">
@@ -78,13 +80,23 @@
         var len = data.length;
         console.log("len:"+len);
         for (var i = 0; i < len; i++) {
-            tableStr = tableStr + "<tr class='success'><td align='center'>" + data[i]["line_id"]
-                + "</td>" +"<td align='center'>" + data[i]["line_name"] + "</td>"
-                + "<td align='center'>" + data[i]["stable"] + "</td>"
-                + "<td align='center'>" + data[i]["transspeed"] + "</td>"
-                + "<td align='center'>" + data[i]["state"] + "</td></tr>";
+            if(data[i]["state"]=="正常"){
+                tableStr = tableStr + "<tr class='success'><td align='center'>" + data[i]["line_id"]
+                    + "</td>" +"<td align='center'>" + data[i]["line_name"] + "</td>"
+                    + "<td align='center'>" + data[i]["stable"] + "</td>"
+                    + "<td align='center'>" + data[i]["transspeed"] + "</td>"
+                    + "<td align='center'>" + data[i]["state"] + "</td>" +
+                    "<td align='center'>" + "<a></a>" + "</td></tr>";
+            }else{
+                tableStr = tableStr + "<tr class='warning'><td align='center'>" + data[i]["line_id"]
+                    + "</td>" +"<td align='center'>" + data[i]["line_name"] + "</td>"
+                    + "<td align='center'>" + data[i]["stable"] + "</td>"
+                    + "<td align='center'>" + data[i]["transspeed"] + "</td>"
+                    + "<td align='center'>" + data[i]["state"] + "</td>"
+                    + "<td align='center'>" + "<a onclick=sendAlarmInfo()>报警</a>" + "</td></tr>";
+            }
         }
-        console.log("tableStr:"+tableStr);
+        //console.log("tableStr:"+tableStr);
         //将动态生成的table添加的事先隐藏的div中.
         $("#lines").html(tableStr);
     }
@@ -98,7 +110,33 @@
         map.addControl(new BMap.ScaleControl());        //比例尺
         map.addControl(new BMap.OverviewMapControl());  //缩略地图
         requestPaintInfo();
+        this.timer = setInterval(() => {
+            initclear();
+            requestPaintInfo();
+        }, 10000);
+
     }
+    function initclear() {
+        hashmap.clear();
+        siteLineData="";
+        siteData="";
+        //清除表格
+        let table = document.getElementById("line_data");
+        if(table.rows.length > 0){
+            var nodes = table.childNodes[0].childNodes;
+            for(var i=nodes.length-1;nodes.length>0;i--)
+            {
+                table.childNodes[0].removeChild(nodes[i]);
+            }
+        }
+        //清除地图
+        var len =map.getOverlays().length;
+        for (var i = len ;i>0; i--)
+        {
+            map.removeOverlay(map.getOverlays()[i]);
+        }
+    }
+    
     function createXMLHttpRequest() {
         var xmlhttp = null;
         if (window.XMLHttpRequest) {
@@ -183,12 +221,12 @@
         const opw = this.openInfo(locationInfo, point, map);
         // 注册点击事件,弹出信息窗口
         marker.addEventListener('click', (e) => {
-
+            map.openInfoWindow(opw, point); // 开启信息窗口
             },
         );
         // 鼠标移入时触发
         marker.addEventListener('mouseover', (e) => {
-            map.openInfoWindow(opw, point); // 开启信息窗口
+
             },
         );
         // 鼠标移出时触发
@@ -213,7 +251,7 @@
             '  </tr>' +
             '  <tr>' +
             '    <td>站点级别：</td>' +
-            '    <td>' + content["site_name"]+ '级</td>' +
+            '    <td>' + content["site_level"]+ '级</td>' +
             '  </tr>' +
             '  <tr>' +
             '    <td>编址码：</td>' +
@@ -233,7 +271,6 @@
         return infoWindow;
         // map.openInfoWindow(infoWindow, point); // 开启信息窗口
     }
-
     // 创建连线
     function createLine(siteData,siteLineData,map) {
         let siteArray = JSON.parse(siteData);
@@ -253,34 +290,88 @@
             let line = [];
             point1=hashmap.get(lineArray[i]["point1"]);
             point2=hashmap.get(lineArray[i]["point2"]);
+            let linecase=lineArray[i];
             line = [point1,point2];
-            addLine(map, line);
+            addLine(map, line,linecase);
             console.log("success" );
         }
     }
     // 创建连线
-    function addLine(map, line) {
-        // 创建弧线对象
-        //  const curve = new BMapLib.CurveLine(line, { strokeColor: '#000000', strokeWeight: 3, strokeOpacity: 0.5 });
-        // @ts-ignore
-        /*  const sy = new BMap.Symbol(BMap_Symbol_SHAPE_BACKWARD_OPEN_ARROW, {
-              scale: 0.6, // 图标缩放大小
-              strokeColor: '#fff', // 设置矢量图标的线填充颜色
-              strokeWeight: '1', // 设置线宽
-          });
-          const icons = new BMap.IconSequence(sy, '10', '30');*/
-        // 创建折线
-        //let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5, icons: [icons] });
-        let polyline = new BMap.Polyline(line, { strokeColor: '#33FF00', strokeWeight: 3, strokeOpacity: 0.5 });
+    function addLine(map, line,linecase) {
+        let color;
+        if(linecase["state"]=="正常"){
+            color='#33FF00';
+        }else{
+            color='red';
+        }
+        let polyline = new BMap.Polyline(line, { strokeColor:color, strokeWeight: 3, strokeOpacity: 0.5 });
         map.addOverlay(polyline);
-
-        setTimeout(polyline.setStrokeColor('red'), 5000);
-        this.timer = setInterval(() => {
-            const color = ['#33FF00', '#F7F709', '#F70909'];
-            const a = Math.floor(Math.random() * 3);
-            polyline.setStrokeColor(color[a]);
-            console.log('变色');
-        }, 2000);
+        const opw = this.openLineInfo(linecase, polyline);
+        polyline.addEventListener('click', (e) => {
+               //console.log("color:"+polyline);
+                //map.openInfoWindow(opw, e.point); // 开启信息窗口
+            },
+        );
+        // 鼠标移入时触发
+        polyline.addEventListener('mouseover', (e) => {
+                map.openInfoWindow(opw, e.point); // 开启信息窗口
+            },
+        );
+        // 鼠标移出时触发
+        polyline.addEventListener('mouseout', e => {
+            },
+        );
+    }
+    /** 注册内容框的弹出事件 */
+    function openLineInfo(linecase, polyline) {
+        const opts = {
+            // width: 250,     // 信息窗口宽度
+            // height: 80,     // 信息窗口高度
+            title: '基本信息', // 信息窗口标题
+            enableMessage: true, // 设置允许信息窗发送短息
+            offset: new BMap.Size(0, -23),
+        };
+        const sContent = '<table align="center">' +
+            '<tbody>' +
+            '  <tr>' +
+            '    <td>线路名称：</td>' +
+            '    <td> ' + linecase["line_name"]+ '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>线路类型：</td>' +
+            '    <td>' + linecase["line_type"]+ '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>线路描述：</td>' +
+            '    <td>' + linecase["line_info"]+ '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>线路长度：</td>' +
+            '    <td> ' + linecase["length"] + '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>稳定度：</td>' +
+            '    <td> ' + linecase["stable"] + '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>传输速率：</td>' +
+            '    <td> ' + linecase["transspeed"] + '</td>' +
+            '  </tr>' +
+            '  <tr>' +
+            '    <td>工作状态：</td>' +
+            '    <td> ' + linecase["state"] + '</td>' +
+            '  </tr>' +
+            /*'  <tr>' +
+            '    <td><a>发送报警信息</a></td>' +
+            '  </tr>' +*/
+            '</tbody>' +
+            '</table>';
+        const infoWindow = new BMap.InfoWindow(sContent, opts);  // 创建信息窗口对象
+        return infoWindow;
+    }
+    /*发送报警信息*/
+    function sendAlarmInfo() {
+        console.log("发送报警信息");
     }
 
 </script>

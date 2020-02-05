@@ -227,7 +227,13 @@ function requestCellValue(monitorInfoSet) {
     var xmlHttp = createXMLHttpRequest();
     //xmlHttp.crossDomain="Access-Control-Allow-Origin";
     if (xmlHttp == null) {
-        alert('not allow ajax');
+        WW.showMiniDialog({
+            title: "提示",
+            content:"not allow ajax",
+            type:"warning",
+            delay:0
+        });
+        //alert('not allow ajax');
         return;
     }
     xmlHttp.open("GET", url, true);
@@ -299,6 +305,12 @@ function sendCloseCmd(infoStr) {
     var xmlHttp = createXMLHttpRequest();
     //xmlHttp.crossDomain="Access-Control-Allow-Origin";
     if (xmlHttp == null) {
+        WW.showMiniDialog({
+            title: "提示",
+            content:"not allow ajax",
+            type:"warning",
+            delay:0
+        });
         alert('not allow ajax');
         return;
     }
@@ -311,8 +323,19 @@ function sendCloseCmd(infoStr) {
             isSucceed = xmlHttp.responseText;
             console.log("isSucceed:  " + isSucceed);
             if (isSucceed == "true") {
+                WW.showMiniDialog({
+                    title: "提示",
+                    content:"请求发送成功",
+                    delay:0
+                });
                 alert("请求发送成功");
             } else {
+                WW.showMiniDialog({
+                    title: "提示",
+                    content:"请求发送失败",
+                    type:"warning",
+                    delay:0
+                });
                 alert("请求发送失败");
             }
         }
@@ -337,7 +360,13 @@ function openGraph(graphxml,sitename) {
     {
         var doc = mxUtils.parseXml(graphxml);
         if(!editor1){
-            alert("editor1为空");
+            WW.showMiniDialog({
+                title: "提示",
+                content:"editor1为空",
+                type:"warning",
+                delay:0
+            });
+            //alert("editor1为空");
         }
         editor1.setGraphXml(doc.documentElement);
         editor1.setModified(false);
@@ -352,7 +381,13 @@ function openGraph(graphxml,sitename) {
     }
     catch (e)
     {
-        mxUtils.alert(mxResources.get('invalidOrMissingFile') + ': ' + e.message);
+        WW.showMiniDialog({
+            title: "提示",
+            content:mxResources.get('invalidOrMissingFile') + ': ' + e.message,
+            type:"warning",
+            delay:0
+        });
+        //mxUtils.alert(mxResources.get('invalidOrMissingFile') + ': ' + e.message);
     }
 }
 
@@ -430,7 +465,13 @@ Actions.prototype.init = function () {
                 var doc = mxUtils.parseXml(xml);
                 editor.graph.setSelectionCells(editor.graph.importGraphModel(doc.documentElement));
             } catch (e) {
-                mxUtils.alert(mxResources.get('invalidOrMissingFile') + ': ' + e.message);
+                WW.showMiniDialog({
+                    title: "提示",
+                    content:mxResources.get('invalidOrMissingFile') + ': ' + e.message,
+                    type:"warning",
+                    delay:0
+                });
+                //mxUtils.alert(mxResources.get('invalidOrMissingFile') + ': ' + e.message);
             }
         }));
 
@@ -1123,7 +1164,13 @@ Actions.prototype.init = function () {
 
     this.put('start', new Action('start', function () {
         if (running) {
-            alert('started, dont start again');
+            WW.showMiniDialog({
+                title: "提示",
+                content:"started, dont start again",
+                type:"warning",
+                delay:0
+            });
+            //alert('started, dont start again');
             return;
         }
         running = true;
@@ -1143,14 +1190,18 @@ Actions.prototype.init = function () {
         mGraph = graph;
         mRootCell = mGraph.model.root;
         startService();
-
-        //alert('start');
     }, null, null, null));
 
 
     this.put('stop', new Action('stop', function () {
         if (!running) {
-            alert('stoped, dont stop again');
+            WW.showMiniDialog({
+                title: "提示",
+                content:"stoped, dont stop again",
+                type:"warning",
+                delay:0
+            });
+            //alert('stoped, dont stop again');
             return;
         }
         running = false;
@@ -1166,8 +1217,12 @@ Actions.prototype.init = function () {
         graph.setCellsResizable(true);
         graph.setCellsEditable(true);
         graph.setCellsLocked(false);
-
-        alert('stop');
+        WW.showMiniDialog({
+            title: "提示",
+            content:"stop",
+            delay:0
+        });
+        //alert('stop');
     }, null, null, null));
 
 /*    this.put('opener', new Action('opener', function () {
@@ -1408,6 +1463,15 @@ Actions.prototype.init = function () {
         mRootCell = mGraph.model.root;
         InitSiteName(mRootCell);
         let selectedCell = graph.getSelectionCell();
+        console.log("sendCommand");
+        let params = {
+            deviceId: selectedCell.getdeviceid(),
+            mRootCell: graph.model.root,
+            site_name: site_name,
+            graph:graph
+        }
+        //发送命令消息，对话框
+        //WW.showSendCommandDialog(params);
 
     }, null, null, null);
 

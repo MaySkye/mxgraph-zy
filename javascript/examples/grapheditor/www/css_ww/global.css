@@ -44,8 +44,8 @@
 .ww-dialog {
     display: block;
     border-radius: var(--border-scale);
-    width: var(--ww-dialog-width);
-    /*height: var(--ww-dialog-height);*/
+    min-width: var(--ww-dialog-width);
+    /*min-height: var(--ww-dialog-height);*/
     position: absolute;
     z-index: 110; /*模态框 z-index*/
     background-color: var(--ww-dialog-bgColor);
@@ -177,7 +177,6 @@
     display: block;
     width: 100%;
     height: 42px;
-    position: relative;
     /*background: #2A3D61;*/
     padding: 10px;
     box-sizing: border-box; /* 防止子元素溢出 */
@@ -194,7 +193,7 @@
     box-sizing: border-box;
 }
 
-.ww-dialog-btnGroup,.ww-mini-dialog-btnGroup > button {
+.ww-dialog-btnGroup button,.ww-mini-dialog-btnGroup  button {
     float: right;
     position: relative;
     margin-left: 10px;

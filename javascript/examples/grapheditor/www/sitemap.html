@@ -9,6 +9,10 @@
     <script src="http://api.map.baidu.com/library/CurveLine/1.5/src/CurveLine.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="UTF-8"></script>
+    <!-- 王伟引入的依赖 -->
+    <link rel="stylesheet" href="css_ww/global.css">
+    <!-- 王伟引入的js业务代码 -->
+    <script src="js_ww/action_ww.js"></script>
 </head>
 <body>
  <style>
@@ -20,6 +24,7 @@
          position: absolute;
          z-index: 1;
      }
+     .BMap_cpyCtrl {display:none;}
      #normal{
          width: 60px;
          height: 52px;
@@ -29,7 +34,7 @@
          right: 130px;
          z-index: 3;
          background:url('images/1.png');
-         border: #668B8B;
+         /*border: #668B8B;*/
          border-style: solid;
      }
      #addsite{
@@ -41,7 +46,7 @@
          right: 70px;
          z-index: 3;
          background:url('images/2.png');
-         border: #668B8B;
+         /*border: #668B8B;*/
          border-style: solid;
      }
      #addline {
@@ -53,7 +58,7 @@
          right: 10px;
          z-index: 2;
          background:url('images/3.png');
-         border: #668B8B;
+         /*border: #668B8B;*/
          border-style: solid;
      }
      /*背景层*/
@@ -182,6 +187,44 @@
      </div><!-- /.modal-dialog -->
  </div><!-- /.modal -->
 
+ <div class="modal" id="site_confirm" tabindex="-1">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="closesite_confirm()">
+                     &times;</button>
+                 <h4 class="modal-title" >提示</h4>
+             </div>
+             <div class="modal-body">
+                 确定要添加此站点吗？
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closesite_confirm()">取消</button>
+                 <button type="button" class="btn btn-primary" onclick="yes_site_confirm()">确定</button>
+             </div>
+         </div><!-- /.modal-content -->
+     </div>
+ </div>
+
+ <div class="modal" id="line_confirm" tabindex="-1">
+     <div class="modal-dialog">
+         <div class="modal-content">
+             <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="closeline_confirm()">
+                     &times;</button>
+                 <h4 class="modal-title" id="myModalLabel">提示</h4>
+             </div>
+             <div class="modal-body" >
+                 确定要添加此链路吗？
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn btn-default" data-dismiss="modal" onclick="closeline_confirm()">取消</button>
+                 <button type="button" class="btn btn-primary" onclick="btn_popLineBox()">确定</button>
+             </div>
+         </div><!-- /.modal-content -->
+     </div>
+ </div>
+
  <div id="tools">
      <input type="button"  id="normal"  onclick="btn_normal()"/>
      <input type="button"  id="addsite" onclick = "btn_addsite()" />
@@ -213,6 +256,9 @@
     let btn1=document.getElementById('normal');
     let btn2=document.getElementById('addsite');
     let btn3=document.getElementById('addline');
+    //添加站点和链路的提示框
+    let site_confirm = document.getElementById('site_confirm');
+    let line_confirm = document.getElementById('line_confirm');
     //全局变量
     let map; //地图对象
     let new_marker; //新标注对象
@@ -261,15 +307,15 @@
     }
 
     function btn_normal() {
-        btn1.style.border=="000000";
+        /*btn1.style.border=="000000";
         btn2.style.border=="668B8B";
-        btn3.style.border=="668B8B";
+        btn3.style.border=="668B8B";*/
         sta=1;
     }
     function btn_addsite() {
-        btn1.style.border=="668B8B";
+        /*btn1.style.border=="668B8B";
         btn2.style.border=="000000";
-        btn3.style.border=="668B8B";
+        btn3.style.border=="668B8B";*/
         sta=2;
         map.addEventListener("click",function(e){
             if(sta==2){
@@ -296,7 +342,8 @@
                     input_sitename.value=addComp.city;
                 });
 
-                var choice=confirm("确定要添加此站点吗？");
+                popsite_confirm();
+                /*var choice=confirm("确定要添加此站点吗？");
                 if(choice){
                     btn_popSiteBox();
                     // 构建label 样式 添加文字标签
@@ -312,20 +359,21 @@
 
                 }else{
                     map.removeOverlay(new_marker);
-                }
+                }*/
             }
         });
     }
     function btn_addline(){
-        btn1.style.border=="668B8B";
+        /*btn1.style.border=="668B8B";
         btn2.style.border=="668B8B";
-        btn3.style.border=="000000";
+        btn3.style.border=="000000";*/
         sta=3;
     }
 
     function btn_popSiteBox() {
         popSiteBox.style.display = "block";
         popLayer.style.display = "block";
+        site_confirm.style.display = "none";
     };
     function btn_closeSiteBox() {
         popSiteBox.style.display = "none";
@@ -339,14 +387,48 @@
     function btn_popLineBox() {
         popLineBox.style.display = "block";
         popLayer.style.display = "block";
+        line_confirm.style.display = "none";
     };
     function btn_closeLineBox() {
         popLineBox.style.display = "none";
         popLayer.style.display = "none";
+        map.removeOverlay(temp_polyline);
         map.removeOverlay(new_line);
     }
     function closeLineBox() {
         popLineBox.style.display = "none";
+        popLayer.style.display = "none";
+    }
+    function popsite_confirm() {
+        site_confirm.style.display = "block";
+        popLayer.style.display = "block";
+    }
+    function closesite_confirm() {
+        site_confirm.style.display = "none";
+        popLayer.style.display = "none";
+        map.removeOverlay(new_marker);
+    }
+    function yes_site_confirm() {
+        btn_popSiteBox();
+        // 构建label 样式 添加文字标签
+        const content =
+            '<div>' +
+            '<div style="transform: translateX(-50%);' +
+            'position: absolute;' +
+            'left: 50%;">' + input_sitename.value + '</div>' +
+            '</div>';
+        const label = new BMap.Label(content, { offset: new BMap.Size(10, 25) });
+        label.setStyle({ border: 'none', padding: 0, fontWeight: 'bold', fontSize: '14px' }); // 去边框
+        new_marker.setLabel(label);
+    }
+    function popline_confirm() {
+        line_confirm.style.display = "block";
+        popLayer.style.display = "block";
+    }
+    function closeline_confirm() {
+        map.removeOverlay(temp_polyline);
+        map.removeOverlay(new_line);
+        line_confirm.style.display = "none";
         popLayer.style.display = "none";
     }
 
@@ -384,7 +466,13 @@
     {
         let xmlHttp = createXMLHttpRequest();
         if (xmlHttp == null) {
-            alert('not allow ajax');
+            WW.showMiniDialog({
+                title: "提示",
+                content:"not allow ajax",
+                type:"warning",
+                delay:0
+            });
+            //alert('not allow ajax');
             return;
         }
         xmlHttp.open("POST", addsite_url, true);
@@ -393,6 +481,11 @@
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                 closeSiteBox();
+                WW.showMiniDialog({
+                    title: "提示",
+                    content:"添加成功",
+                    delay:0
+                });
             }
         }; //call back when ready
         xmlHttp.send(str);
@@ -429,7 +522,13 @@
     {
         let xmlHttp = createXMLHttpRequest();
         if (xmlHttp == null) {
-            alert('not allow ajax');
+            WW.showMiniDialog({
+                title: "提示",
+                content:"not allow ajax",
+                type:"warning",
+                delay:0
+            });
+            //alert('not allow ajax');
             return;
         }
         xmlHttp.open("POST", addline_url, true);
@@ -438,6 +537,11 @@
         xmlHttp.onreadystatechange = function () {
             if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
                 closeLineBox();
+                WW.showMiniDialog({
+                    title: "提示",
+                    content:"添加成功",
+                    delay:0
+                });
             }
         }; //call back when ready
         xmlHttp.send(str);
@@ -447,7 +551,13 @@
     {
         let paint_xmlHttp = createXMLHttpRequest();
         if (paint_xmlHttp == null) {
-            alert('not allow ajax');
+            WW.showMiniDialog({
+                title: "提示",
+                content:"not allow ajax",
+                type:"warning",
+                delay:0
+            });
+            //alert('not allow ajax');
             return;
         }
         paint_xmlHttp.open("GET", paint_url, true);
@@ -532,12 +642,14 @@
                                 strokeWeight:3, //宽度
                                 strokeOpacity:0.5});//透明度
                             map.addOverlay(new_line);
-                            var choice=confirm("确定要添加此链路吗？");
+                            popline_confirm();
+                            /*var choice=confirm("确定要添加此链路吗？");
                             if(choice){
                                 btn_popLineBox();
                             }else{
+                                map.removeOverlay(temp_polyline);
                                 map.removeOverlay(new_line);
-                            }
+                            }*/
                         }
                     }
                 }
